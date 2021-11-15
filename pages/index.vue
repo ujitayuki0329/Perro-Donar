@@ -3,6 +3,7 @@
     <cliant-only>
       <Header/>
       <Footer/>
+      <Copylight/>
     </cliant-only>
   </div>
 </template>

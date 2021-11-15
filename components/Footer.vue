@@ -58,6 +58,26 @@
           </div><!-- .row -->
         </div><!-- .container -->
       </div>
+      <!-- <Modal v-show="contact_modal">
+        <div class="form-wrapper">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="close_contact_modal">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <h1>お問い合わせ</h1>
+          <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="お名前" />   
+            <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" />
+            <textarea name="text" class="feedback-input" placeholder="お問合せ内容"></textarea>
+            <div class="button-panel">
+              <input type="submit" class="button" title="Sign In" value="送信">
+            </div>
+          </form>
+          <div class="form-footer">
+            <p>新規会員登録がお済みでない方は <a href="#">こちら</a></p>
+            <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
+          </div>
+        </div>
+      </Modal> -->
     </cliant-only>
   </div>
 </template>
