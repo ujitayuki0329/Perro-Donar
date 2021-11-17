@@ -1,7 +1,7 @@
 <template>
   <div>
     <cliant-only>
-      <h1>test</h1>
+      <i class="fas fa-address-card"></i>
     </cliant-only>
   </div>
 </template>
