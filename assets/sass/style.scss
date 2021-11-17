@@ -3,6 +3,31 @@ $main: #ff7d6e;
 $copyright: gray;
 
 /* ヘッダー */
+.navbar {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-bar {
+  height: 100%;
+  background-color: $main;
+  color: aliceblue;
+  .nav-bar-title {
+    h1 {
+      padding: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
+
+.fas {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 /* メイン */
 
