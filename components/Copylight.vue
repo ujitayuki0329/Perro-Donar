@@ -8,8 +8,3 @@
   </div>
 </template>
 
-<style>
-.copy-right{
-  background-color: gray;
-}
-</style>

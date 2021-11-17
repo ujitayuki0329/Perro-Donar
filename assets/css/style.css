@@ -5,22 +5,6 @@
 /* メイン */
 
 /* フッター */
-.sns-wrap {
-  display: flex;
-  margin-top: 20px;
-}
-
-#footer-index ul ul {
-  padding-left: 0.75rem;
-  border-left: 1px solid #6c757d;
-}
-
-.footer-sns img {
-  height: 35px;
-  width: auto;
-  margin-right: 25px;
-  border-radius: 50%;
-}
 
 @media screen and (min-width: 768px) {
   /* 共通レイアウト */

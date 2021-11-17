@@ -9,14 +9,15 @@
               <li class="footer-menu"><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="/about">ぺろドナとは？</a></li>
-                <li><a href="#" @click="open_contact_modal">お問い合わせ</a></li>
+                <!-- <li><a href="#" @click="open_contact_modal">お問い合わせ</a></li> -->
+                <li><a href="#">お問い合わせ</a></li>
                 <li><a href="/news">ペットニュース</a></li>
                 <li><a href="#">ご利用ガイド</a></li>
               </ul>
             </ul>
       
             <ul class="col list-unstyled">
-              <li><a href="#">MENU</a></li>
+              <li class="footer-menu"><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="/my_page/dog_setting">愛犬を掲載する</a></li>
                 <li><a href="/my_page/mypage_setting/">プロフィール編集</a></li>
@@ -28,7 +29,7 @@
             </ul>
       
             <ul class="col list-unstyled">
-                <li><a href="#">MENU</a></li>
+                <li class="footer-menu"><a href="#">MENU</a></li>
                 <ul class="list-unstyled">
                   <li><a href="#">利用規約</a></li>
                   <li><a href="/commercial">特定商取引に基ずく表記</a></li>
