@@ -8,10 +8,10 @@
             <ul class="col list-unstyled">
               <li class="footer-menu"><a href="#">MENU</a></li>
               <ul class="list-unstyled">
-                <li><a href="/about">ぺろドナとは？</a></li>
+                <li><a href="/other/about">ぺろドナとは？</a></li>
                 <!-- <li><a href="#" @click="open_contact_modal">お問い合わせ</a></li> -->
                 <li><a href="#">お問い合わせ</a></li>
-                <li><a href="/news">ペットニュース</a></li>
+                <li><a href="/other/news">ペットニュース</a></li>
                 <li><a href="#">ご利用ガイド</a></li>
               </ul>
             </ul>
@@ -32,7 +32,7 @@
                 <li class="footer-menu"><a href="#">MENU</a></li>
                 <ul class="list-unstyled">
                   <li><a href="#">利用規約</a></li>
-                  <li><a href="/commercial">特定商取引に基ずく表記</a></li>
+                  <li><a href="/other/commercial">特定商取引に基ずく表記</a></li>
                   <li><a href="#">プライバシーポリシー</a></li>
                 </ul>
             </ul>
