@@ -40,7 +40,7 @@
 
 <script>
 import '@/assets/css/style.css'
-import '@/assets/css/commercial.css'
+import '@/assets/css/other.css'
 
 export default{}
 </script>
