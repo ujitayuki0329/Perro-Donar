@@ -20,6 +20,7 @@
         </slide>
       </carousel>
       <Slider />
+      <Advertisement />
       <Footer/>
       <Copylight/>
     </cliant-only>
