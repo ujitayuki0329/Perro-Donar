@@ -4,7 +4,7 @@
     <Header />
     <div id="container"> 
       <div id="page_title">
-        <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>スポンサー一覧</h1>
+        <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>お気に入り一覧</h1>
       </div>
       <div class="container">
         
@@ -20,7 +20,6 @@
 
 <script>
 import '@/assets/css/style.css'
-import '@/assets/css/list.css'
 
 export default{}
 </script>
