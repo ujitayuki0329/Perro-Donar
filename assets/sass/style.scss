@@ -2,6 +2,8 @@
 $main: #ff7d6e;
 $copyright: gray;
 
+// 共通レイアウト
+
 /* ヘッダー */
 .navbar {
   width: 80%;
@@ -32,10 +34,10 @@ $copyright: gray;
 
 .carousel-wrap {
   width: 100%;
-  height: 600px;
+  height: auto;
   img {
     width: 100%;
-    height: 600px;
+    height: auto;
     object-fit: cover;
   }
 }

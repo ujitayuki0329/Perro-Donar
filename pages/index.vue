@@ -20,6 +20,10 @@
         </slide>
       </carousel>
       <Slider />
+      <Search />
+      <Contents />
+      <About />
+      <Protection />
       <Advertisement />
       <Footer/>
       <Copylight/>
