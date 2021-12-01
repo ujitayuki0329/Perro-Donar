@@ -1,6 +1,14 @@
 /* new_dog */
 /* popular */
 /* serch */
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
 .dog-list-title {
   font-weight: bold;
   font-size: 20px;
@@ -45,8 +53,12 @@
 }
 
 .card-body {
-  height: 100px;
+  height: 100%;
   color: gray;
+}
+
+.card-title {
+  font-size: 15px;
 }
 
 .card-body p {
@@ -62,4 +74,7 @@
   /* new_dog */
   /* popular */
   /* serch */
+  .card-group {
+    display: block;
+  }
 }

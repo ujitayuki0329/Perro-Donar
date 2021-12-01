@@ -13,8 +13,10 @@
             <a href="/dog-detail">
             <div class="card-body">
               <h5 class="card-title">〇〇ちゃん　♀</h5>
-              <p class="card-text h6">女の子｜埼玉県</p>
-              <p class="card-text h6">掲載日2021年05月05日</p>
+              <p class="card-text h6">性別：女の子埼玉県</p>
+              <p class="card-text h6">出身地：埼玉県</p>
+              <p class="card-text h6">生年月日：2020年11月23日</p>
+              <p class="card-text h6">掲載日：2021年05月05日</p>
             </div>
             </a>
           </div>

@@ -16,10 +16,10 @@
             </form>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/my_page/dog_setting"><i class="fas fa-paw icon"></i>愛犬を掲載する</a>
+                <a class="nav-link" aria-current="page" href="/user_page/publishe/"><i class="fas fa-paw icon"></i>愛犬を掲載する</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/favorite"><i class="fas fa-heart icon"></i>お気に入り</a>
+                <a class="nav-link" href="/user_page/favorite"><i class="fas fa-heart icon"></i>お気に入り</a>
               </li>
             </ul>
             <div class="user-button">
