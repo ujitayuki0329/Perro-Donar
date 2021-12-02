@@ -8,14 +8,30 @@
   margin: 0 auto;
 }
 
+.sponser-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
 a {
   color: black;
+}
+
+h2 {
+  color: #ff7d6e;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.nav-tabs-wrapper {
+  border-bottom: 1px solid rgb(219, 217, 217);
 }
 
 .nav-tabs-wrapper ul li {
   width: auto;
   height: 50px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .clickBtn {
@@ -50,4 +66,11 @@ a {
 .m-form-textarea:focus {
   outline: none;
   border: 5px solid rgb(188, 205, 236);
+}
+
+.total-place {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 10px;
 }

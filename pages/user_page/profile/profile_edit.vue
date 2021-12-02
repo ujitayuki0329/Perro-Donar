@@ -47,7 +47,7 @@
         <br>
         
         <div class="mt-5">
-          <a href="/welcome">
+          <a href="/user_page/profile/profile">
           <button type="button" class="btn btn-outline-dark">保存</button>
           </a>
           <a href="/welcome">

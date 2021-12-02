@@ -61,10 +61,10 @@
           
 
           <div class="mt-5">
-            <a href="/my_page/home_list/">
+            <a href="/user_page/my_dog/">
             <button type="button" class="btn btn-outline-dark">保存</button>
             </a>
-            <a href="/welcome">
+            <a href="/">
             <button type="button" class="btn btn-outline-danger">キャンセル</button>
             </a>
           </div>

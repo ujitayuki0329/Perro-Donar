@@ -82,6 +82,7 @@
 <script>
 import '@/assets/css/style.css'
 import '@/assets/css/list.css'
+import '@/assets/css/user_page.css'
 
 export default{}
 </script>
