@@ -50,7 +50,7 @@
           <a href="/user_page/profile/profile">
           <button type="button" class="btn btn-outline-dark">保存</button>
           </a>
-          <a href="/welcome">
+          <a href="/">
           <button type="button" class="btn btn-outline-danger">キャンセル</button>
           </a>
         </div>

@@ -74,3 +74,25 @@ h2 {
   font-weight: bold;
   line-height: 10px;
 }
+
+.like {
+  display: flex;
+}
+
+.introduce_content {
+  padding: 10px;
+}
+
+.main-img {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-img img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px gray;
+}
