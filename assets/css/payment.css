@@ -1,0 +1,64 @@
+.carender {
+  width: 150px;
+  text-align: center;
+}
+
+.form-select {
+  font-size: 12px;
+}
+
+.payment-detail {
+  border: 1px solid rgb(211, 210, 210);
+  height: auto;
+  border-radius: 5px;
+}
+
+.payment-detail-inner {
+  padding: 10px;
+}
+
+.payment-detail h1 {
+  font-size: 20px;
+}
+
+.total-price {
+  text-align: right;
+}
+
+.total-price p {
+  font-weight: bold;
+}
+
+.print-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr {
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+table tr:hover {
+  background-color: #d4f0fd;
+}
+
+table th,
+table td {
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+
+table td.icon {
+  background-size: 35px;
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+} */
