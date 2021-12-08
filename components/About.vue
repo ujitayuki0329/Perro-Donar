@@ -5,7 +5,7 @@
           <h2 class="text-center text-white description-title">「わんちゃん好き」と「愛犬」をつなげるプラットフォーム
           </h2>
           <div class="section-container-inner2">
-            <div class="mt-5 text-center">
+            <div class="section-container-inner2-wrap">
               <ul class="description">
                 <li class="border1">
                   <h2>お好きなワンちゃんを選ぶ</h2>
@@ -19,7 +19,7 @@
                   <p>ご自身の愛犬も「愛犬を掲載する」から登録してみよう。
                   わんちゃん好きの方がいっぱいです。</p>
                 </li>
-                <li>
+                <li class="w-100">
                   <h2>お互いのスポンサーになる</h2>
                   <img src="~/assets/img/description3.png" alt="">
                   <p>お互いにスポンサーになろう。
