@@ -6,6 +6,19 @@
       <div id="page_title">
         <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>プロフィール</h1>
       </div>
+      <div class="profile-wrap">
+        <div class="profile-avater">
+          <img src="~/~/assets/img/avater.png" alt="">
+        </div>
+        <div class="introduce-wrap">
+          <div class="introduce-wrap-inner">
+            <p>自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。</p>
+          </div>
+        </div>
+        <div class="mb-5">
+          <p><span style="font-weight:bold;">MY DOG一覧</span>は<a href="/user_page/my_dog/">こちら</a></p>
+        </div>
+      </div>
       <div class="mypage-wrap">
         <div class="form-group">
           <p>ユーザー名</p>

@@ -6,6 +6,20 @@
       <div id="page_title">
         <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>プロフィール編集</h1>
       </div>
+      <div class="profile-wrap">
+        <div class="profile-avater">
+          <img src="~/assets/img/avater.png" alt="">
+        </div>
+        <div id="attachment">
+         <label><input type="file" name="ファイル添付" class="fileinput">ファイルを添付する</label>
+        </div>
+        
+        <div class="introduce-wrap">
+          <div class="introduce-wrap-inner-edit">
+            <textarea class="w-100" name="introduce" id="" cols="30" rows="10" placeholder="自己紹介を入力してください"></textarea>
+          </div>
+        </div>
+      </div>
       <div class="mypage-wrap">
         <div class="form-group">
           <p>ユーザー名</p>

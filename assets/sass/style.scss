@@ -1,8 +1,12 @@
 // 変数
 $main: #ff7d6e;
+$a: #f8a79e;
 $copyright: gray;
 
 // 共通レイアウト
+a:hover {
+  color: $a;
+}
 
 /* ヘッダー */
 .navbar {
