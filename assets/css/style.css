@@ -12,8 +12,12 @@
   background-color: rgba(0, 0, 0, 0.74);
 }
 
+.modal__window {
+  width: 80%;
+}
+
 .modal__content {
-  width: 70%;
+  width: 50%;
   height: auto;
   margin: 0 auto;
   padding: 10px;
@@ -437,7 +441,7 @@ h1 {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 1px solid #ff7d6e;
+  border: 3px solid #ddd;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -447,29 +451,13 @@ h1 {
 }
 
 .feedback-input:focus {
-  border: 2px solid #cc4949;
+  border: 2px solid #ff7d6e;
 }
 
 textarea {
   height: 150px;
   line-height: 150%;
   resize: vertical;
-}
-
-.button-panel .button {
-  background: #ff7d6e;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  height: 50px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2em;
-  letter-spacing: 0.05em;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background 0.3s ease-in-out;
-  width: 100%;
-  border-radius: 30px;
 }
 
 .button:hover {
@@ -489,6 +477,47 @@ textarea {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
+}
+
+.form-wrapper {
+  width: 100%;
+}
+
+.complet-wrap {
+  text-align: center;
+}
+
+.transfer-detail {
+  text-align: left;
+  border: 3px solid #ddd;
+}
+
+.transfer-detail-title {
+  background-color: #ddd;
+}
+
+.transfer-detail-title h2 {
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.transfer-detail-content {
+  padding: 0 20px 0 20px;
+}
+
+.transfer-detail-content p {
+  font-size: 15px;
+}
+
+.account-information {
+  float: right;
+}
+
+.account-information-title h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -530,6 +559,33 @@ textarea {
 
 @media screen and (max-width: 768px) {
   /* 共通レイアウト */
+  .modal__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+  }
+
+  .modal__window {
+    width: 80%;
+  }
+
+  .modal__content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 20px;
+  }
 
   /* ヘッダー */
 

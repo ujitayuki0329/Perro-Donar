@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="print-btn">
-          <a href="/payment/payment" class="btn btn-radius-solid" style="font-weight: bold;">印刷する</a>
+          <a href="#" class="btn btn-radius-solid" style="font-weight: bold;">印刷する</a>
         </div>
       </div>
     </div>

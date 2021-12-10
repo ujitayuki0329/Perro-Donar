@@ -66,14 +66,14 @@
                 <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <h1>お問い合わせ</h1>
+          <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>お問い合わせ</h1>
           <div class="form-wrap">
             <form>      
               <input name="name" type="text" class="feedback-input" placeholder="お名前" />   
               <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" />
               <textarea name="text" class="feedback-input" placeholder="お問合せ内容"></textarea>
-              <div class="button-panel">
-                <input type="submit" class="button" title="Sign In" value="送信">
+              <div class="check-button">
+                <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="open_contact_modal">送信する</a>
               </div>
             </form>
           </div>

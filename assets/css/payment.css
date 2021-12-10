@@ -34,6 +34,43 @@
   margin-top: 20px;
 }
 
+.payment-wrap {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.transfer-check-wrap {
+  width: 50%;
+  margin: 0 auto;
+  border: 3px solid #ff7d6e;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.transfer-check-wrap p {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+}
+
+.account-information h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px 10px 0;
+}
+
+.next-button {
+  padding: 20px 20px 20px 0;
+}
+
+.check-button {
+  text-align: center;
+  padding: 20px;
+}
+
 /* table {
   border-collapse: collapse;
   border-spacing: 0;
