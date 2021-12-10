@@ -9,8 +9,8 @@
               <li class="footer-menu"><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="/other/about">ぺろドナとは？</a></li>
-                <!-- <li><a href="#" @click="open_contact_modal">お問い合わせ</a></li> -->
-                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#" @click="open_contact_modal">お問い合わせ</a></li>
+                <!-- <li><a href="#">お問い合わせ</a></li> -->
                 <li><a href="/other/news">ペットニュース</a></li>
                 <li><a href="/other/user_guide/">ご利用ガイド</a></li>
               </ul>
@@ -59,26 +59,53 @@
           </div><!-- .row -->
         </div><!-- .container -->
       </div>
-      <!-- <Modal v-show="contact_modal">
+      <Modal v-show="contact_modal">
         <div class="form-wrapper">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="close_contact_modal">
-              <span aria-hidden="true">&times;</span>
-          </button>
+          <div class="modal-button">
+            <button type="button" class="close-button" data-dismiss="modal" aria-label="Close" @click="close_contact_modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
           <h1>お問い合わせ</h1>
-          <form>      
-            <input name="name" type="text" class="feedback-input" placeholder="お名前" />   
-            <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" />
-            <textarea name="text" class="feedback-input" placeholder="お問合せ内容"></textarea>
-            <div class="button-panel">
-              <input type="submit" class="button" title="Sign In" value="送信">
-            </div>
-          </form>
-          <div class="form-footer">
-            <p>新規会員登録がお済みでない方は <a href="#">こちら</a></p>
-            <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
+          <div class="form-wrap">
+            <form>      
+              <input name="name" type="text" class="feedback-input" placeholder="お名前" />   
+              <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" />
+              <textarea name="text" class="feedback-input" placeholder="お問合せ内容"></textarea>
+              <div class="button-panel">
+                <input type="submit" class="button" title="Sign In" value="送信">
+              </div>
+            </form>
           </div>
         </div>
-      </Modal> -->
+      </Modal>
     </cliant-only>
   </div>
 </template>
+
+<script>
+// import Modal from './Modal.vue'
+import Modal from './Modal'
+
+
+export default {
+  components: {
+    Modal
+  },
+  
+  data() {
+    return {
+      contact_modal: false,
+    }
+  },
+  methods: {
+    open_contact_modal() {
+      this.contact_modal = true
+    },
+    close_contact_modal() {
+      this.contact_modal = false
+    },
+  }
+  
+}
+</script>

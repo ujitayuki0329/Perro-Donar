@@ -1,4 +1,39 @@
 /* 共通レイアウト */
+.modal__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.modal__content {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  overflow: scroll;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.4s;
+}
+.modal-leave-active {
+  transition: opacity 0.6s ease 0.4s;
+}
+.modal-enter,
+.modal-leave-to {
+  opacity: 0;
+}
 
 /* ヘッダー */
 
@@ -387,6 +422,74 @@ a.btn-radius-solid:hover {
 }
 
 /* フッター */
+h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 1px solid #ff7d6e;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+.button-panel .button {
+  background: #ff7d6e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.button:hover {
+  background: #f3a1a1;
+}
+
+.modal-button {
+  text-align: right;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+}
+
+.form-wrap {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
 
 @media screen and (max-width: 600px) {
   .description img {
@@ -425,7 +528,7 @@ a.btn-radius-solid:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /* 共通レイアウト */
 
   /* ヘッダー */
