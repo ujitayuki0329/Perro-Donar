@@ -203,3 +203,24 @@ table td {
   padding: 10px 0;
   font-weight: bold;
 }
+
+.like_btn {
+  position: relative;
+  box-shadow: 0 0 8px gray;
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+}
+
+.hart {
+  font-size: 20px;
+  color: rgb(172, 170, 170);
+  position: absolute;
+  top: 50%; /*親要素を起点に上から50%*/
+  left: 50%; /*親要素を起点に左から50%*/
+  transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
