@@ -1,6 +1,8 @@
 .dog-setting-wrap {
   width: 80%;
   margin: 0 auto;
+  border-radius: 20px;
+  background-color: #f3f3f3;
 }
 
 .mypage-wrap {
@@ -223,4 +225,8 @@ table td {
   left: 50%; /*親要素を起点に左から50%*/
   transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
   -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.content-item {
+  border: #ddd solid 2px;
 }

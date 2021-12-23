@@ -10,10 +10,10 @@
           </button>
       
           <div class="collapse navbar-collapse sp-menu" id="navbarSupportedContent">
-            <form class="d-flex">
+            <!-- <form class="d-flex">
               <input class="form-control me-2" type="search" aria-label="Search" placeholder="フリーワードを入力">　
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/user_page/publishe/"><i class="fas fa-paw icon"></i>愛犬を掲載する</a>
@@ -24,7 +24,7 @@
             </ul>
             <div class="user-button">
             <div class="test">
-              <a href="#" class="btn btn-outline-danger">会員登録</a>
+              <a href="/auth/register/" class="btn btn-outline-danger">会員登録</a>
               <a href="#" class="btn btn-outline-info" @click="open_contact_modal">ログイン</a>
               <!-- <a href="#" class="btn btn-outline-danger" @click="open_register_modal">会員登録</a>
               <a href="#" class="btn btn-outline-info" @click="open_login_modal">ログイン</a> -->
@@ -88,7 +88,16 @@ export default {
     close_contact_modal() {
       this.contact_modal = false
     },
-  }
+  },
+
+  // mounted() {
+  //   $(function(){
+  //     $(".menu-btn").click(function(){
+  //       $(".sp-menu").slideToggle(200);
+  //     });
+  //   });
+  // } 
+
   
 }
 </script>
