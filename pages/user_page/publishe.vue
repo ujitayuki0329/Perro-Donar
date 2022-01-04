@@ -19,8 +19,8 @@
             </div>
             <div class="form-group">
               <p>性別</p>
-              <input type="radio" name="sex" value="1" checked="checked">男の子
-              <input type="radio" name="sex" value="2">女の子
+              <input type="radio" name="sex" value="1" style="transform:scale(2.0); margin:10px;" checked="checked">男の子
+              <input type="radio" name="sex" value="2" style="transform:scale(2.0); margin:10px;">女の子
             </div>
             <div class="form-group">
               <p>犬種</p>
@@ -35,8 +35,8 @@
           <div>
             <div class="form-group">
               <!-- <p>公開・非公開</p> -->
-              <input type="radio" name="release" value="1" checked="checked">公開
-              <input type="radio" name="release" value="2">非公開
+              <input type="radio" name="release" value="1" style="transform:scale(2.0); margin:10px;" checked="checked">公開
+              <input type="radio" name="release" value="2" style="transform:scale(2.0); margin:10px;">非公開
             </div>
           </div>
 
