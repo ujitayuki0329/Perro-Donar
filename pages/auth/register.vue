@@ -1,203 +1,190 @@
 <template>
   <div>
-    <header>
-      <h1>Registration</h1>
-    </header>
-    <div id="form">
-      <div class="fish" id="fish"></div>
-      <div class="fish" id="fish2"></div>
-      <form id="waterform" method="post">
-        <div class="formgroup" id="name-form">
-            <label for="name">Your name<span style="color:red;">*</span></label>
-            <input type="text" id="name" name="name" />
+    <div class="register_title">
+      <h1><i class="fas fa-paw icon" style="color:#ff7d6e; margin-top:20px;"></i>ユーザー登録</h1>
+    </div>
+    <div class="register_body">
+      <div class="Form">
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+          <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
         </div>
-        <div class="formgroup" id="email-form">
-            <label for="email">Your e-mail<span style="color:red;">*</span></label>
-            <input type="email" id="email" name="email" />
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
         </div>
-        <div class="formgroup" id="email-form">
-            <label for="email">Password<span style="color:red;">*</span></label>
-            <input type="email" id="email" name="email" />
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>パスワード</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example1234">
         </div>
-        <div class="formgroup" id="email-form">
-            <label for="email">Password(確認)<span style="color:red;">*</span></label>
-            <input type="email" id="email" name="email" />
+        <div class="Form-Item">
+          <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>パスワード(確認)</p>
+          <input type="email" class="Form-Item-Input" placeholder="例）example1234">
         </div>
-        <input type="submit" value="Member Registation!" />
-      </form>
+        <div class="register_btn">
+          <a href="/" class="btn btn-radius-solid" style="font-weight: bold; margin-bottom:20px;">登録する</a>  
+        </div>
+        <div class="register_footer">
+            <p>すでに新規会員登録をお済ませの方は <a href="#">こちら</a></p>
+          </div>
+    </div>
+      
+      <!-- <input type="submit" class="Form-Btn" value="登録する"> -->
     </div>
   </div>
 </template>
 
 <style>
-@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
-
-body, html{
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: 'Sniglet', cursive;
+input:focus {
+  outline: solid 2px #ff7d6e;
 }
-h1{
-  font-weight: normal;
-  font-size: 4em;
-  font-family: 'Raleway', sans-serif;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 500px;
-  color: #ff7d6e;
+.register_title{
   text-align: center;
-
 }
-
-/* Animation webkit */
-@-webkit-keyframes myfirst
-{
-  0% {margin-left: -235px}
-  90% {margin-left: 100%;}
-  100% {margin-left: 100%;}
-}
-
-/* Animation */
-@keyframes myfirst
-{
-  0% {margin-left: -235px}
-  70% {margin-left: 100%;}
-  100% {margin-left: 100%;}
-}
-
-.fish{
-  background-image: url('./assets/img/register_dog.png');
-  width: 235px;
-  height: 104px;
-  margin-left: -235px;
-  position: absolute; 
-  animation: myfirst 24s;
-  -webkit-animation: myfirst 24s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-}
-
-#fish{
-  top: 120px;
-}
-
-#fish2{
-  top: 260px;
-  animation-delay: 12s;
-  -webkit-animation-delay: 12s;
-}
-
-
-header{
-  width: 100%;
-  height: 160px;
-  /* background: url('http://www.geertjanhendriks.nl/codepen/form/golf.png') repeat-x bottom; */
-}
-
-#form{
-  width: 100%;
-  height: 100%; 
-  background-color: gray;
-  overflow: hidden;
-  position: relative;
-  
-}
-
-
-
-form{
+.register_body{
+  width: 80%;
   margin: 0 auto;
-  width: 500px;
-  padding: 40px 0 40px 0;
-  color: white;
-  position: relative;
+  /* background-color: #ddd; */
 }
-label, input, textarea{
-  display: block; 
-}
-input, textarea{
-  width: 500px; 
-  border: none;
-  border-radius: 20px;
-  outline: none;
-  padding: 10px;
-  font-family: 'Sniglet', cursive;
-  font-size: 1em;
-  color: #676767;
-  transition: border 0.5s;
-  -webkit-transition: border 0.5s;
-  -moz-transition: border 0.5s;
-  -o-transition: border 0.5s;
-  border: solid 3px #ddd;  
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  
-}
-input:focus, textarea:focus{
-  border: solid 3px #ff7d6e;  
-}
-
-textarea{
-  height: 100px;  
-  resize: none; 
-  overflow: auto;
-}
-input[type="submit"]{
-  background-color: #ff7d6e;
-  color: white;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-  font-size: 1.29em;
-  font-family: 'Sniglet', cursive;
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-}
-input[type="submit"]:hover{
-  background-color: #f8a79e;
-  
-}
-label{
-  font-size: 1.5em;
+.Form {
   margin-top: 20px;
-  padding-left: 20px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
 }
-.formgroup, .formgroup-active, .formgroup-error{
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 10.5%;
-  transition: background-image 0.7s;
-  -webkit-transition: background-image 0.7s;
-  -moz-transition: background-image 0.7s;
-  -o-transition: background-image 0.7s;
-  width: 566px;
-  padding-top: 2px;
+.register_btn{
+  text-align: center;
+  margin: 20px;
 }
-
-.formgroup{
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif'); 
+.register_footer{
+  text-align: center;
 }
-.formgroup-active{
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
-}
-.formgroup-error{
-  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
-  color: red;
-}
-
-@media screen and (max-width: 768px) {
-form{
-  margin: 0 auto;
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
   width: 100%;
-  padding: 40px 0 40px 0;
-  color: white;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #ff7d6e;
+  color: #fff;
+  font-size: 14px;
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #ff7d6e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    padding:10px;
+  }
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+  .register_body{
+    width: 100%;
+  }
 }
 </style>
