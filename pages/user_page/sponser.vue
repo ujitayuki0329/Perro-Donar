@@ -54,7 +54,7 @@
               <div class="total-place">
                 <p>管理者：ujita yuki</p>
                 <p>支援額総合計：10,000円</p>
-                <a href="/payment/pay/payment_detail" class="btn btn-radius-solid" style="font-weight: bold;">明細詳細</a>
+                <a href="/payment/pay/payment_detail" class="btn btn-radius-solid" style="font-weight: bold; margin-bottom:20px">明細詳細</a>
               </div>
             </div>
             <div v-show="tab === 2" class="content-item">
@@ -125,7 +125,7 @@
                 <p>管理者：ujita yuki</p>
                 <p>支援額合計：10,000円</p>
                 <p>出金可能額：10,000円</p>
-                <a href="/payment/pay/payment" class="btn btn-radius-solid" style="font-weight: bold;">出金申請</a>
+                <a href="/payment/pay/payment" class="btn btn-radius-solid" style="font-weight: bold; margin-bottom:20px;">出金申請</a>
               </div>
             </div>
           </div>  
