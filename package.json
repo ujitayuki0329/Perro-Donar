@@ -20,7 +20,8 @@
     "nuxt": "^2.15.7",
     "nuxt-fontawesome": "^0.4.0",
     "vue": "^2.6.14",
-    "vue-carousel": "^0.18.0"
+    "vue-carousel": "^0.18.0",
+    "vue-upload-drop-images": "^1.0.7"
   },
   "devDependencies": {
     "sass-loader": "^7.3.1"

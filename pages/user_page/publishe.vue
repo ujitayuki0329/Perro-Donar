@@ -27,8 +27,10 @@
               <input type="text" id="dog_breed-field" name="dog_breed" class="form-control border-input" placeholder="ボストンテリア" value="">
             </div>
             <div class="form-group">
-              <p>画像</p>
-              <input type="file" id="dog_pic" name="dog_pic" value="">
+              <p>画像アップロード</p>
+            </div>
+            <div class="container">
+              <UploadImages />
             </div>
           </div>
           <br>

@@ -10,16 +10,16 @@
           </button>
       
           <div class="collapse navbar-collapse sp-menu" id="navbarSupportedContent">
-            <form class="d-flex">
+            <!-- <form class="d-flex">
               <input class="form-control me-2" type="search" aria-label="Search" placeholder="フリーワードを入力">　
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/user_page/publishe/"><i class="fas fa-paw icon"></i>愛犬を掲載する</a>
+                <a class="nav-link" aria-current="page" href="/user_page/publishe/"><i class="fas fa-paw icon"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/user_page/favorite"><i class="fas fa-heart icon"></i>お気に入り</a>
+                <a class="nav-link" href="/user_page/favorite"><i class="fas fa-heart icon"></i></a>
               </li>
             </ul>
             <div class="user-button">
