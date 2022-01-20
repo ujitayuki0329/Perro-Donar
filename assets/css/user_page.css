@@ -231,6 +231,39 @@ table td {
   border: #ddd solid 2px;
 }
 
+/* メイン画像切り替え */
+.swiper-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-wrap {
+  width: 75%;
+  margin: 0 auto;
+}
+.swiper-container {
+  width: 100%;
+}
+
+.slider-thumbnail-wrap {
+  width: 100%;
+}
+.swiper-container.slider {
+  height: 80vh;
+}
+.swiper-container.slider-thumbnail {
+  width: 100%;
+}
+.swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide {
+  opacity: 0.5;
+  overflow: hidden;
+}
+.swiper-container.slider-thumbnail
+  .swiper-wrapper
+  .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
 @media screen and (max-width: 768px) {
   .introduce-wrap {
     padding: 0 0 20px 0;

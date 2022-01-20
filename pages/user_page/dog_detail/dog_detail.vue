@@ -1,48 +1,40 @@
 <template>
   <div>
-    <client-only>
+    <!-- <client-only> -->
     <Header />
     <div id="container"> 
       <div id="page_title">
         <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>キャンチョメ</h1>
       </div>
       <div class="container">
-        <div class="main-img">
-          <img src="~/assets/img/dog-img/ボストンテリア.png">
-        </div>
-        <div>
-          <ul class="card-horizontal-list text-center mb-5">
-              <li>
-                <a href="#">
-                  <img src="~/assets/img/dog-img/ボストンテリア.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="~/assets/img/dog-img/ボストンテリア.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="~/assets/img/dog-img/ボストンテリア.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="~/assets/img/dog-img/ボストンテリア.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="~/assets/img/dog-img/ボストンテリア.png">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="~/assets/img/dog-img/ボストンテリア.png">
-                </a>
-              </li>
-            </ul>
+        <div class="slider-wrap">
+          <!-- スライダー-->
+          <div class="swiper-container slider">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog03.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog03.jpg" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+
+          <div class="slider-thumbnail-wrap">
+            <!-- サムネイル -->
+            <div class="swiper-container slider-thumbnail">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog03.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://junpei-sugiyama.com/wp-content/uploads/2021/01/dog03.jpg" alt=""></div>
+                </div>
+            </div>
+          </div>
         </div>
         <div class="introduce-wrap">
           <div class="my_name">
@@ -93,7 +85,7 @@
       
     <Footer />
     <Copylight />
-    </client-only>
+    <!-- </client-only> -->
   </div>
 </template>
 
@@ -107,5 +99,37 @@ export default{
       tab: 1,
     }
   },
+  head() {
+    return {
+      script: [
+        {
+          src: 'https://unpkg.com/swiper/swiper-bundle.min.js'
+        }
+      ],
+      link: [
+        {
+         rel: 'stylesheet',
+         href: 'https://unpkg.com/swiper/swiper-bundle.min.css'
+        }
+      ]
+    }
+  },
+  mounted() {
+    //サムネイル
+    var sliderThumbnail = new Swiper('.slider-thumbnail', {
+      slidesPerView: 10,
+    });
+
+    //スライダー
+    var slider = new Swiper('.slider', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: sliderThumbnail
+      }
+    });
+  }
 }
 </script>
