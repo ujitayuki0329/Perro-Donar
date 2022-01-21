@@ -56,7 +56,7 @@
             </form>
           </div>
           <div class="login_footer">
-            <p>新規会員登録がお済みでない方は <a href="#">こちら</a></p>
+            <p>新規会員登録がお済みでない方は <a href="/auth/register">こちら</a></p>
             <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
           </div>
         </div>

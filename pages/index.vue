@@ -15,9 +15,9 @@
         <slide class="carousel-wrap">
           <img class="carousel-img" src="~/assets/img/slide2.png" alt="スライド2">
         </slide>
-        <slide class="carousel-wrap">
+        <!-- <slide class="carousel-wrap">
           <img class="carousel-img" src="~/assets/img/slide3.png" alt="スライド3">
-        </slide>
+        </slide> -->
       </carousel>
       <Slider />
       <Search />
@@ -44,7 +44,7 @@ export default {
       imageurls: [
         require('~/assets/img/slide1.png'),
         require('~/assets/img/slide2.png'),
-        require('~/assets/img/slide3.png'),
+        // require('~/assets/img/slide3.png'),
       ],
     }
   }
