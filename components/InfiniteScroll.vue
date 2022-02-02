@@ -3,7 +3,7 @@
     <ul class="infinite-scroll-list">
       <li class="infinite-scroll-list-item" v-for="i in this.count" :key="i">scroll {{ i }}</li>
     </ul>
-    <infinite-loading ref="infiniteLoading" slot="spinner" @infinite="infiniteHandler">
+    <infinite-loading ref="infiniteLoading" slot="spinner" spinner="bubbles" @infinite="infiniteHandler">
       <div slot="no-results"/>
       <span slot="no-more">No more data</span>
     </infinite-loading>
@@ -21,7 +21,7 @@ export default {
   methods: {
   infiniteHandler() {
       setTimeout(() => {
-        if (this.count < 50) {
+        if (this.count < 100) {
           this.count += 20
           this.$refs.infiniteLoading.stateChanger.loaded()
         } else {
