@@ -62,6 +62,9 @@ a:hover {
     color: #696969;
     font-size: 15px;
   }
+  .list-unstyled li a:hover {
+    font-weight: bold;
+  }
 }
 
 #footer-logo {

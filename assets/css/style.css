@@ -40,6 +40,13 @@
 }
 
 /* ヘッダー */
+.navbar-nav .nav-item a {
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #bf0000;
+}
 
 /* メイン */
 #page_title {
@@ -520,6 +527,10 @@ textarea {
   margin-bottom: 20px;
 }
 
+.footer_nav {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .description img {
     width: 100%;
@@ -592,6 +603,42 @@ textarea {
   /* メイン */
 
   /* フッター */
+  .footer_nav {
+    display: block !important;
+    border: 1px solid #ccc;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+  }
+  .footer_nav ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .footer_nav ul .fas {
+    font-size: 20px;
+  }
+
+  .footer_nav ul li {
+    display: table-cell;
+    font-size: 10px;
+    color: #ccc;
+    min-width: 50px;
+    border-right: 1px solid #ccc;
+  }
+  .footer_nav ul li:first-child {
+    border-left: 1px solid #ccc;
+  }
+  .footer_nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #aaa;
+  }
 }
 
 @media screen and (max-width: 1430px) {
