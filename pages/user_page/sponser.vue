@@ -16,7 +16,7 @@
                 <div>
                   <ul class="card-horizontal-list text-center">
                     <li>
-                      <a href="/dog-detail">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test.jpg">
                         <div>
                           <h3>name</h3>
@@ -25,7 +25,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test6.jpg">
                         <div>
                           <h3>name</h3>
@@ -34,7 +34,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test3.jpg">
                         <div>
                           <h3>name</h3>
@@ -59,7 +59,7 @@
                 <div>
                   <ul class="card-horizontal-list text-center">
                     <li>
-                      <a href="/dog-detail">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test.jpg">
                         <div>
                           <h3>name</h3>
@@ -68,7 +68,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test6.jpg">
                         <div>
                           <h3>name</h3>
@@ -77,7 +77,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test3.jpg">
                         <div>
                           <h3>name</h3>
@@ -86,7 +86,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test7.jpg">
                         <div>
                           <h3>name</h3>
@@ -95,7 +95,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test4.jpg">
                         <div>
                           <h3>name</h3>
@@ -104,7 +104,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/user_page/dog_detail/dog_detail/">
                         <img src="~/assets/img/test5.jpg">
                         <div>
                           <h3>name</h3>
