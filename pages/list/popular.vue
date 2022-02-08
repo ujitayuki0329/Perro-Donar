@@ -10,7 +10,7 @@
         <div class="card-group">
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
-            <a href="/dog-detail">
+            <a href="/user_page/dog_detail/dog_detail/">
             <div class="card-body">
               <h5 class="card-title">〇〇ちゃん　♀</h5>
               <p class="card-text h6">性別：女の子埼玉県</p>
@@ -22,7 +22,7 @@
           </div>
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
-            <a href="#">
+            <a href="/user_page/dog_detail/dog_detail/">
             <div class="card-body">
               <h5 class="card-title">〇〇ちゃん　♀</h5>
               <p class="card-text h6">女の子｜埼玉県</p>
@@ -32,7 +32,7 @@
           </div>
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
-            <a href="#">
+            <a href="/user_page/dog_detail/dog_detail/">
             <div class="card-body">
               <h5 class="card-title">〇〇ちゃん　♀</h5>
               <p class="card-text h6">女の子｜埼玉県</p>
@@ -42,7 +42,7 @@
           </div>
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
-            <a href="#">
+            <a href="/user_page/dog_detail/dog_detail/">
             <div class="card-body">
               <h5 class="card-title">〇〇ちゃん　♀</h5>
               <p class="card-text h6">女の子｜埼玉県</p>
@@ -52,7 +52,7 @@
           </div>
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
-            <a href="#">
+            <a href="/user_page/dog_detail/dog_detail/">
             <div class="card-body">
               <h5 class="card-title">〇〇ちゃん　♀</h5>
               <p class="card-text h6">女の子｜埼玉県</p>

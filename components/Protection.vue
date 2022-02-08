@@ -10,7 +10,7 @@
           <h1 class="slider_ttl">動物愛護団体一覧</h1>
           <ul class="card-horizontal-list text-center">
             <li>
-              <a href="/dog-detail">
+              <a href="#">
                 <img src="~/assets/img/aigo_1.png">
                 <div>
                   <h3>name</h3>
