@@ -8,15 +8,10 @@
       </div>
       <div class="container">
         <div class="sponser-wrap">
-          <div class="nav-tabs-wrapper">
-            <ul class="nav nav-pills" role="tablist">
-              <li :class="{ clickBtn: tab === 1 }" @click="tab = 1">MY SPONSER</li>
-              <li :class="{ clickBtn: tab === 2 }" @click="tab = 2">YOUR SPONSER</li>
-            </ul>
-          </div>
-          <div class="content">
-            <div v-show="tab === 1" class="content-item">
-              <div class="introduce">
+          <div class="tab-wrap">
+              <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">MY SPONSER</label>
+              <div class="tab-content">
+                  <div class="introduce">
                 <h2>MY SPONSER</h2>
                 <div>
                   <ul class="card-horizontal-list text-center">
@@ -56,9 +51,10 @@
                 <p>支援額総合計：10,000円</p>
                 <a href="/payment/pay/payment_detail" class="btn btn-radius-solid" style="font-weight: bold; margin-bottom:20px">明細詳細</a>
               </div>
-            </div>
-            <div v-show="tab === 2" class="content-item">
-              <div class="introduce">
+              </div>
+              <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">YOUR SPONSER</label>
+              <div class="tab-content">
+                <div class="introduce">
                 <h2>YOUR SPONSER</h2>
                 <div>
                   <ul class="card-horizontal-list text-center">
@@ -119,7 +115,6 @@
                   </ul>
                 </div>
               </div>
-
               <br>
               <div class="total-place">
                 <p>管理者：ujita yuki</p>
@@ -127,8 +122,8 @@
                 <p>出金可能額：10,000円</p>
                 <a href="/payment/pay/payment" class="btn btn-radius-solid" style="font-weight: bold; margin-bottom:20px;">出金申請</a>
               </div>
-            </div>
-          </div>  
+              </div>
+          </div>
         </div>
       </div>
     </div>

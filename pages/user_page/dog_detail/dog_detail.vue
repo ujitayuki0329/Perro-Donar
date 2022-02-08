@@ -56,7 +56,21 @@
               <a href="/payment/settlement/settlement" class="btn btn-radius-solid" style="margin-left:10px; font-weight:bold; color:#ff7d6e;">スポンサーになる</a>
             </div>
           </div>
-          <div class="nav-tabs-wrapper">
+          <div class="detail-tab-wrap">
+              <input id="TAB-01" type="radio" name="TAB" class="detail-tab-switch" checked="checked" /><label class="detail-tab-label" for="TAB-01">自己紹介</label>
+              <div class="detail-tab-content">
+                  メロスは激怒した。必ず、かの邪智暴虐の王を除かなければならぬと決意した。メロスには政治がわからぬ。メロスは、村の牧人である。笛を吹き、羊と遊んで暮して来た。けれども邪悪に対しては、人一倍に敏感であった。きょう未明メロスは村を出発し、野を越え山越え、十里はなれた此のシラクスの市にやって来た。メロスには父も、母も無い。女房も無い。十六の、内気な妹と二人暮しだ。この妹は、村の或る律気な一牧人を、近々、花婿として迎える事になっていた。結婚式も間近かなのである。メロスは、それゆえ、花嫁の衣裳やら祝宴の御馳走やらを買いに、はるばる市にやって来たのだ。
+              </div>
+              <input id="TAB-02" type="radio" name="TAB" class="detail-tab-switch" /><label class="detail-tab-label" for="TAB-02">スポンサー様へ</label>
+              <div class="detail-tab-content">
+                  先ず、その品々を買い集め、それから都の大路をぶらぶら歩いた。メロスには竹馬の友があった。セリヌンティウスである。今は此のシラクスの市で、石工をしている。その友を、これから訪ねてみるつもりなのだ。久しく逢わなかったのだから、訪ねて行くのが楽しみである。歩いているうちにメロスは、まちの様子を怪しく思った。ひっそりしている。
+              </div>
+              <input id="TAB-03" type="radio" name="TAB" class="detail-tab-switch" /><label class="detail-tab-label" for="TAB-03">チャット</label>
+              <div class="detail-tab-content">
+                  <InfiniteScroll/>
+              </div>
+          </div>
+          <!-- <div class="nav-tabs-wrapper">
             <ul class="nav nav-tabs" role="tablist">
               <li :class="{ clickBtn: tab === 1 }" @click="tab = 1">自己紹介</li>
               <li :class="{ clickBtn: tab === 2 }" @click="tab = 2">スポンサー様へ</li>
@@ -78,7 +92,7 @@
           </div>
           <div class="mt-5 text-center">
             <a href="/chat/chat" class="btn btn-radius-solid" style="font-weight: bold;">メッセージを送る</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
