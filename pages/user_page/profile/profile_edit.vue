@@ -16,7 +16,8 @@
         
         <div class="introduce-wrap">
           <div class="introduce-wrap-inner-edit">
-            <textarea class="w-100" name="introduce" id="" cols="30" rows="10" placeholder="自己紹介を入力してください"></textarea>
+            <!-- <textarea class="w-100" name="introduce" id="" cols="30" rows="10" placeholder="自己紹介を入力してください"></textarea> -->
+            <textarea name="introduce" class="m-form-textarea" placeholder="自己紹介文"></textarea>
           </div>
         </div>
       </div>
