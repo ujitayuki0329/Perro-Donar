@@ -23,7 +23,7 @@
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, black 0%, rgba(187, 170, 170, 0) 100%);
+  /* background: linear-gradient(to right, black 0%, rgba(187, 170, 170, 0) 100%); */
   content: "";
   height: 120px;
   position: absolute;

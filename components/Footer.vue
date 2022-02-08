@@ -64,7 +64,7 @@
           <li><a href="/"><i class="fas fa-home"></i></a>ホーム</li>
           <li><a href="#"><i class="fas fa-search"></i></a>検索</li>
           <li><a href="/user_page/publishe/"><i class="fas fa-plus"></i></a>投稿</li>
-          <li><a href="/user_page/sponser/"><i class="fas fa-paw"></i></a>スポンサー</li>
+          <li><a href="/user_page/sponser/"><i class="fas fa-heart icon"></i></a>お気に入り</li>
           <li><a href="#"><i class="fas fa-bars"></i></a>メニュー</li>
         </ul>
       </div>
