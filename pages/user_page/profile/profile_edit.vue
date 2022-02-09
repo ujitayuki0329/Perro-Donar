@@ -4,7 +4,7 @@
     <Header />
     <div id="container"> 
       <div id="page_title">
-        <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>マイページTOP</h1>
+        <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>プロフィール編集</h1>
       </div>
       <div class="profile_container">
         <!-- 左メニュー -->
