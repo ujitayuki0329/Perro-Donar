@@ -40,8 +40,21 @@
           <div class="my_name">
             <table>
               <tr>
+                <th>犬種</th>
+                <td>ボストンテリア</td>
+              </tr>
+              <tr>
                 <th>名前</th>
-                <td>キャンチョメ ♀</td>
+                <td>キャンチョメ</td>
+              </tr>
+              <tr>
+                <th>地域</th>
+                <td>埼玉県</td>
+              </tr>
+              <tr>
+              <tr>
+                <th>性別</th>
+                <td>女の子（♀）</td>
               </tr>
               <tr>
                 <th>年齢</th>
