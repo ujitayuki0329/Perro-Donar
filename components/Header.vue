@@ -47,7 +47,7 @@
                     <a href="#" class="btn btn-outline-info" @click="open_contact_modal">ログイン</a>
                   </div>
                   <li>
-                      <a href="#"><img src="~/assets/img/avater.png" alt=""><span class="user_name">キャンちょめ</span>さん</a>
+                      <a href="/user_page/profile/mypage"><img src="~/assets/img/avater.png" alt=""><span class="user_name">キャンちょめ</span>さん</a>
                   </li>
                   <li>
                       <a href="/user_page/publishe/"><i class="fas fa-paw"></i>愛犬を掲載する</a>

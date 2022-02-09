@@ -1,136 +1,234 @@
 <template>
   <div>
+    <div class="container">
     <header>
-      <div class="hamburger-menu">
-        <input type="checkbox" id="menu-btn-check">
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
-        <!--ここからメニュー-->
-        <div class="menu-content">
-            <ul>
-                <li>
-                    <a href="#"><i class="far fa-user"></i>プロフィール</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-paw"></i>愛犬を掲載する</a>
-                </li>
-                <li>
-                    <a href="#"><i class="far fa-heart"></i>お気に入り</a>
-                </li>
-                <li>
-                    <a href="#"><i class="far fa-handshake"></i>スポンサー一覧</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-dog"></i>My Dog一覧</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-sign-out-alt"></i>ログアウト</a>
-                </li>
-            </ul>
+      <div class="bio">
+        <img src="http://www.croop.cl/UI/twitter/images/up.jpg" alt="background" class="bg">
+        <div class="desc">
+          <h3>@carlf</h3>
+          <p>Carl Fredricksen is the protagonist in Up. He also appeared in Dug's Special Mission as a minor character.</p>
         </div>
-        <!--ここまでメニュー-->
       </div>
-  </header>
+      <div class="avatarcontainer">
+        <img src="~/assets/img/avater.png" alt="avatar" class="avatar">
+        <div class="hover">
+            <div class="icon-twitter"></div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <h1>キャンチョメ</h1>
+      <p>一般会員</p>
+      <p>自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。</p>
+      <div class="data">
+        <ul>
+          <li>
+            5
+            <span>掲載犬数</span>
+          </li>
+          <li>
+            150
+            <span>フォロー</span>
+          </li>
+          <li>
+            300
+            <span>フォロワー</span>
+          </li>
+        </ul>
+      </div>
+      <div class="follow"> <div class="icon-twitter"></div> Follow</div>
+    </div>
+  </div>
   </div>
 </template>
 
 
 <style>
-.menu-btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    height: 60px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    z-index: 90;
-}
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: black;
-    position: absolute;
-}
-.menu-btn span:before {
-    bottom: 8px;
-}
-.menu-btn span:after {
-    top: 8px;
-}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-#menu-btn-check:checked ~ .menu-content {
-    left: 0;/*メニューを画面内へ*/
-}
+body {
+  background-color: #ecf0f1; }
 
-#menu-btn-check:checked ~ .menu-btn span {
-    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
-}
-#menu-btn-check:checked ~ .menu-btn span::before {
-    bottom: 0;
-    transform: rotate(45deg);
-}
-#menu-btn-check:checked ~ .menu-btn span::after {
-    top: 0;
-    transform: rotate(-45deg);
-}
-#menu-btn-check {
-    display: none;
-}
+header {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2em;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px; }
 
-.menu-content {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 100%;/*leftの値を変更してメニューを画面外へ*/
-    z-index: 80;
-    background-color: black;
-    transition: all 0.5s;/*アニメーション設定*/
-}
-.menu-content ul {
-    padding: 70px 10px 0;
-}
-.menu-content ul li {
-    border-bottom: solid 1px #ff7d6e;
-    list-style: none;
-    font-weight: bold;
-}
+.container {
+  width: 320px;
+  margin: 3em auto 1em auto;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding-bottom: 1.5em;
+  background-color: #dde1e2;
+  -webkit-box-shadow: #bdc3c7 0 5px 5px;
+  -moz-box-shadow: #bdc3c7 0 5px 5px;
+  box-shadow: #bdc3c7 0 5px 5px; }
 
-.menu-content ul li:hover{
-  background-color: #f8a79e;
-  padding-left: 20px;
-}
+.bg {
+  border-bottom: 8px solid #ff7d6e; }
 
-.menu-content ul li i{
-  font-size: 20px;
-  padding: 10px;
-}
+.bio:hover > .desc {
+  cursor: pointer;
+  opacity: 1; }
 
-.menu-content ul li a {
-    display: block;
-    width: 100%;
-    font-size: 15px;
-    box-sizing: border-box;
-    color:#ffffff;
-    text-decoration: none;
-    padding: 30px;
-    position: relative;
+.avatarcontainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  display: block; }
+  .avatarcontainer:hover > .hover {
+    opacity: 1; }
+
+.avatar {
+  width: 100%;
+  border: 8px solid #ff7d6e;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+  .avatar img {
+    width: 65px;
+    height: 65px; }
+  .avatar:hover + .hover {
+    opacity: 1;
+    cursor: pointer; }
+
+.hover {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #ff7d6e;
+  top: 0;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+  padding-top: 18%;
+  opacity: 0;
+  font-family: 'FontAwesome';
+  font-weight: 300;
+  border: 8px solid #ff7d6e;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease; }
+
+.content p{
+  text-align: center;
+  font-size: 10px;
 }
-.menu-content ul li a::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-top: solid 2px #ffffff;
-    border-right: solid 2px #ffffff;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 11px;
-    top: 50px;
-}
+.data {
+  margin-top: .6em;
+  color: #81878b; }
+  .data li {
+    width: 32%;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: 'Lato';
+    border-right: solid 1px #bdc3c7; }
+    .data li:last-child {
+      border: none; }
+    .data li span {
+      display: block;
+      text-transform: uppercase;
+      font-family: 'Quicksand';
+      font-size: .5em;
+      margin-top: .6em;
+      font-weight:700;
+    }
+
+.desc {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 171px;
+  padding: 1.2em 1em 0 1em;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in; }
+  .desc h3 {
+    font-family: "Lato";
+    font-size: 1.2em;
+    margin-bottom: .5em; }
+  .desc p {
+    font-size: .9em;
+    font-family: 'Quicksand';
+    line-height: 1.5em; }
+
+.follow {
+  margin: 1.5em auto 0 auto;
+  background-color: #ff7d6e;
+  width: 150px;
+  color: white;
+  font-family: "Lato";
+  text-align: center;
+  padding: .5em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease; }
+  .follow:hover {
+    background-color: #f8a79e;
+    cursor: pointer; }
 </style>

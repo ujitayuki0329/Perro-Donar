@@ -4,7 +4,7 @@
     <Header />
     <div id="container"> 
       <div id="page_title">
-        <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>プロフィール編集</h1>
+        <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>マイページ</h1>
       </div>
       <div class="profile-wrap">
         <div class="profile-avater">
@@ -69,9 +69,9 @@
           <button type="button" class="btn btn-outline-danger">キャンセル</button>
           </a>
         </div>
-        <div class="mt-5">
+        <!-- <div class="mt-5">
           <p>愛犬を掲載するは<a href="/user_page/publishe/">こちら</a>から</p>
-        </div>
+        </div> -->
       </div>
     </div>
       

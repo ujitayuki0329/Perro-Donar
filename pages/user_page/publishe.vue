@@ -71,9 +71,9 @@
             </a>
           </div>
 
-          <div class="mt-5">
+          <!-- <div class="mt-5">
             <p>プロフィール編集は<a href="/user_page/profile/profile_edit/">こちら</a>から</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -20,7 +20,7 @@
               <li class="footer-menu"><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="/user_page/publishe/">愛犬を掲載する</a></li>
-                <li><a href="/user_page/profile/profile_edit">プロフィール編集</a></li>
+                <li><a href="/user_page/profile/profile/">プロフィール</a></li>
                 <li><a href="/user_page/favorite/">お気に入り</a></li>
                 <li><a href="/user_page/sponser/">スポンサー一覧</a></li>
                 <li><a href="/user_page/my_dog/">MY DOG一覧</a></li>
