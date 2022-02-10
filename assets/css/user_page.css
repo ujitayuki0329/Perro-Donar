@@ -480,6 +480,20 @@ header {
   box-shadow: #bdc3c7 0 5px 5px;
 }
 
+.mypage-container {
+  width: 80%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding-bottom: 1.5em;
+  background-color: #dde1e2;
+  -webkit-box-shadow: #bdc3c7 0 5px 5px;
+  -moz-box-shadow: #bdc3c7 0 5px 5px;
+  box-shadow: #bdc3c7 0 5px 5px;
+}
+
 .bg {
   border-bottom: 8px solid #ff7d6e;
 }
