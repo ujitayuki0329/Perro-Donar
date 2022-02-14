@@ -41,7 +41,7 @@
                     <img src="~/assets/img/avater.png" alt="avatar">
                   </div>
                   <div class="upload_btn">
-                    <label for="file_photo">
+                    <label class="profile_uploadlabel" for="file_photo">
                       ＋写真を選択
                       <input type="file" id="file_photo" style="display:none;">
                     </label>
@@ -59,7 +59,7 @@
                     <img src="~/assets/img/avater.png" alt="avatar">
                   </div>
                   <div class="upload_btn">
-                    <label for="file_photo">
+                    <label class="profile_uploadlabel" for="file_photo">
                       ＋写真を選択
                       <input type="file" id="file_photo" style="display:none;">
                     </label>
@@ -135,13 +135,20 @@ export default{}
   text-align: center;
   margin-top: 20px;
 }
-label {
+/* label {
+  width: 50%;
+  color: white;  
+  font-size: 10px;
+  background-color: #ff7d6e;
+  padding: 6px;
+} */
+
+.profile_uploadlabel{
   width: 50%;
   color: white;  
   font-size: 10px;
   background-color: #ff7d6e;
   padding: 6px;
 }
-
 
 </style>
