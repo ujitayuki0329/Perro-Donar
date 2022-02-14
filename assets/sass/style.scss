@@ -4,6 +4,10 @@ $a: #f8a79e;
 $copyright: gray;
 
 // 共通レイアウト
+.index_wrap {
+  overflow: hidden;
+}
+
 a:hover {
   color: $a;
 }
