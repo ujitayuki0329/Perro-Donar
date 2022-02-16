@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cliant-only>
+    <!-- <cliant-only> -->
       <div class="register_title">
         <h1><i class="fas fa-paw icon" style="color:#ff7d6e; margin-top:20px;"></i>ユーザー登録</h1>
       </div>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </Modal>
-    </cliant-only>
+    <!-- </cliant-only> -->
   </div>
 </template>
 

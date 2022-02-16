@@ -38,7 +38,9 @@
 .modal-leave-to {
   opacity: 0;
 }
-
+#page_title h1 .fas {
+  margin-right: 5px;
+}
 .menu-btn {
   position: absolute;
   top: 20px;
@@ -138,7 +140,8 @@
 }
 
 .menu-content .menu-content-title .fas {
-  color: #ff7d6e;
+  color: red;
+  margin-right: 10px;
 }
 
 .menu-content ul li a {
@@ -163,6 +166,11 @@
   top: 50px;
 }
 
+.nav-item .nav-link .fas {
+  color: #ff7d6e;
+  padding-right: 5px;
+}
+
 /* ヘッダー */
 .navbar-nav .nav-item a {
   font-weight: bold;
@@ -184,6 +192,7 @@
   font-weight: bold;
   margin: 0 auto;
   padding: 20px;
+  margin-left: 10px;
 }
 
 .search_label {

@@ -1,5 +1,5 @@
 <template>
-  <client-only>
+  <!-- <client-only> -->
   <transition name="modal" appear>
     <div class="modal__overlay" @click.self="$emit('close')">
       <div class="modal__window">
@@ -9,7 +9,7 @@
       </div>
     </div>
   </transition>
-  </client-only>
+  <!-- </client-only> -->
 </template>
 
 <script>

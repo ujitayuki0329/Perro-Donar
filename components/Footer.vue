@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cliant-only>
+    <!-- <cliant-only> -->
       <div class="footer-bg">
         <div class="container pt-4 pt-md-5">
           <!-- .row -->
@@ -88,7 +88,7 @@
           </div>
         </div>
       </Modal>
-    </cliant-only>
+    <!-- </cliant-only> -->
   </div>
 </template>
 

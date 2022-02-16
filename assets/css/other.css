@@ -38,7 +38,7 @@ table th {
   background-color: #ff7d6e;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 table td {
@@ -46,7 +46,7 @@ table td {
   width: 70%;
   text-align: center;
   background-color: #eee;
-  padding: 10px 0;
+  padding: 10px;
   font-weight: bold;
 }
 

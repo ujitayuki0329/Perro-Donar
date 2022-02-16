@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cliant-only>
+    <!-- <cliant-only> -->
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"><img src="~/assets/img/header.logo.png" alt="ヘッダーロゴ" height="80"></a>
@@ -98,7 +98,7 @@
           </div>
         </div>
       </Modal>
-    </cliant-only>
+    <!-- </cliant-only> -->
   </div>
 </template>
 
