@@ -116,7 +116,7 @@
 .prolile-wrap{
   width: 100%;
   margin-top: 20px;
-  /* background-color: #ddd; */
+  background-color: #ddd;
 }
 
 .profile-wrap-item{
