@@ -686,6 +686,9 @@ header {
 .profile-edit-link {
   text-align: center;
 }
+.profile-drawal-link {
+  text-align: right;
+}
 
 .profile-edit-link p {
   font-size: 12px;
@@ -768,8 +771,48 @@ header {
   top: 200px;
   background-color: #a62e7a;
 }
+#sp_sidenav {
+  margin-bottom: 10px;
+}
+ul.topnav {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #1b2538;
+}
+ul.topnav li {
+  width: calc(100% / 3);
+  float: left;
+}
+ul.topnav li a {
+  display: block;
+  padding: 14px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+ul.topnav li a:hover:not(.active) {
+  background-color: #a9bce2;
+}
+ul.topnav li a.active {
+  background-color: #da3c41;
+}
+ul.topnav li.right {
+  float: right;
+}
+/* .profile-spmenu {
+  display: none;
+} */
+.profile-spmenu {
+  display: none !important;
+}
 
 @media screen and (max-width: 480px) {
+  .profile-spmenu {
+    display: block !important;
+  }
   .like {
     display: flex;
     justify-content: center;
@@ -797,6 +840,21 @@ header {
     padding: 10px;
     margin: 0 auto;
     width: 90%;
+  }
+  .profile_container {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .mypage-container {
+    width: 100%;
+  }
+  .profile-menu {
+    display: none;
+  }
+  .border {
+    border: 2px solid #ddd;
+    margin: 50px;
   }
 }
 

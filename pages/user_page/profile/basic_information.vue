@@ -18,9 +18,23 @@
             </div>
           </div>
         </div>
+        <div class="profile-spmenu">
+          <div class="sp_navi">
+            <div id="sp_sidenav" class="sidenav">
+              <ul class="topnav">
+                <li><a href="/user_page/profile/mypage" id="home">マイページTOP</a></li>
+                <li><a class="active" href="/user_page/profile/basic_information/" id="news">基本情報設定</a></li>
+                <li><a href="/user_page/profile/profile_edit/" id="contact">プロフィール編集</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <!-- 右コンテンツ -->
         <div class="prolile-wrap">
           <div class="profile-information">
+            <div class="bank-information-title">
+              <p>＜個人情報＞</p>
+            </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>ユーザーネーム</h3>
               <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ujita yuki" value="">

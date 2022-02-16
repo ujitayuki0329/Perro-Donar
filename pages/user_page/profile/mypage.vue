@@ -18,6 +18,19 @@
             </div>
           </div>
         </div>
+        <div class="profile-spmenu">
+          <div class="sp_navi">
+            <div id="sp_sidenav" class="sidenav">
+              <ul class="topnav">
+                <li><a class="active"  href="/user_page/profile/mypage" id="home">マイページTOP</a></li>
+                <li><a href="/user_page/profile/basic_information/" id="news">基本情報設定</a></li>
+                <li><a href="/user_page/profile/profile_edit/" id="contact">プロフィール編集</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
         <!-- 右コンテンツ -->
           <div class="mypage-container">
             <header>
@@ -58,6 +71,9 @@
             </div>
           </div>
       </div>
+      <div class="profile-edit-link">
+        <p>退会は<a href="#">こちら</a>から</p>
+      </div>  
     </div>
     <Footer />
     <Copylight />
@@ -71,3 +87,37 @@ import '@/assets/css/user_page.css'
 
 export default{}
 </script>
+
+<style>
+#sp_sidenav{
+  margin-bottom: 10px;
+}
+ul.topnav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #1b2538;
+}
+ul.topnav li {
+  width : calc(100% / 3) ;
+	float: left;
+}
+ul.topnav li a {
+	display: block;
+	padding: 14px 10px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+  font-size: 10px;
+}
+ul.topnav li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+ul.topnav li a.active {
+	background-color: #da3c41;
+}
+ul.topnav li.right {
+	float: right;
+}
+</style>
