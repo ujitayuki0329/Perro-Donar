@@ -1,6 +1,6 @@
 <template>
   <div>
-    <client-only>
+    <!-- <client-only> -->
     <div class="index_wrap">
       <Header />
       <div id="container"> 
@@ -118,7 +118,7 @@
       <Footer />
       <Copylight />
     </div>
-    </client-only>
+    <!-- </client-only> -->
   </div>
 </template>
 
