@@ -33,41 +33,40 @@
             
           </div>
           <div class="hamburger-menu">
-              <input type="checkbox" id="menu-btn-check">
-              <label for="menu-btn-check" class="menu-btn"><span></span></label>
-              <!--ここからメニュー-->
-              <div class="menu-content">
-                <div class="menu-content-title">
-                  <h1><i class="fas fa-paw"></i>MENU</h1>
-                </div>
-                
-                <ul>
-                  <div class="user-button" style="padding:30px;">
-                    <a href="/auth/register/" class="btn btn-outline-danger">会員登録</a>
-                    <a href="#" class="btn btn-outline-info" @click="open_contact_modal">ログイン</a>
-                  </div>
-                  <li>
-                      <a href="/user_page/profile/mypage"><img src="~/assets/img/avater.png" alt=""><span class="user_name">キャンちょめ</span>さん</a>
-                  </li>
-                  <li>
-                      <a href="/user_page/publishe/"><i class="fas fa-paw"></i>愛犬を掲載する</a>
-                  </li>
-                  <li>
-                      <a href="/user_page/favorite/"><i class="far fa-heart"></i>お気に入り</a>
-                  </li>
-                  <li>
-                      <a href="/user_page/sponser/"><i class="far fa-handshake"></i>スポンサー一覧</a>
-                  </li>
-                  <li>
-                      <a href="/user_page/my_dog/"><i class="fas fa-dog"></i>My Dog一覧</a>
-                  </li>
-                  <li>
-                      <a href="#"><i class="fas fa-sign-out-alt"></i>ログアウト</a>
-                  </li>
-                </ul>
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <!--ここからメニュー-->
+            <div class="menu-content">
+              <div class="menu-content-title">
+                <h1><i class="fas fa-paw"></i>MENU</h1>
               </div>
-              <!--ここまでメニュー-->
+              <ul>
+                <div class="user-button" style="padding:10px;">
+                  <a href="/auth/register/" class="btn btn-outline-danger">会員登録</a>
+                  <a href="#" class="btn btn-outline-info" @click="open_contact_modal">ログイン</a>
+                </div>
+                <li>
+                    <a href="/user_page/profile/mypage"><img src="~/assets/img/avater.png" alt=""><span class="user_name">キャンちょめ</span>さん</a>
+                </li>
+                <li>
+                    <a href="/user_page/publishe/"><i class="fas fa-paw"></i>愛犬を掲載する</a>
+                </li>
+                <li>
+                    <a href="/user_page/favorite/"><i class="far fa-heart"></i>お気に入り</a>
+                </li>
+                <li>
+                    <a href="/user_page/sponser/"><i class="far fa-handshake"></i>スポンサー一覧</a>
+                </li>
+                <li>
+                    <a href="/user_page/my_dog/"><i class="fas fa-dog"></i>My Dog一覧</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i>ログアウト</a>
+                </li>
+              </ul>
             </div>
+            <!--ここまでメニュー-->
+          </div>
         </div>
       </nav>
       <nav id="nav-bar">
