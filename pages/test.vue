@@ -137,7 +137,7 @@
 	position: relative;
 	overflow: hidden;
 	width: 180px;
-	/* height:360px; */
+	height:360px;
 }
 .cp_navi #cp_sidenav a {
 	font-size: 10px;
