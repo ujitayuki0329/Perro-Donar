@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <cliant-only> -->
+    <cliant-only>
         <div class="section-container">
           <h2 class="text-center text-white pt-5 description-title">好きなわんちゃんを見つけよう</h2>
           <p class="text-center text-white description-subtitle">
@@ -75,7 +75,7 @@
           <div class="wave">
           </div>
         </div>
-    <!-- </cliant-only> -->
+    </cliant-only>
   </div>
 </template>
 

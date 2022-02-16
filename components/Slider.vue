@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <cliant-only> -->
+    <cliant-only>
       <div class="slider">
           <div class="slide-track">
             <div class="slide">
@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-    <!-- </cliant-only> -->
+    </cliant-only>
   </div>
 </template>
 

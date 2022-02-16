@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <client-only> -->
+    <client-only>
     <Header />
     <div id="container"> 
       <div id="page_title">
@@ -73,7 +73,7 @@
     </div>
     <Footer />
     <Copylight />
-    <!-- </client-only> -->
+    </client-only>
   </div>
 </template>
 
@@ -84,71 +84,3 @@ import '@/assets/css/user_page.css'
 export default{}
 </script>
 
-<style>
-.profile-information{
-  position: relative;
-}
-.profile_edit_header{
-  background-color: #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.profile_edit_contents{
-  padding: 10px;
-}
-.profile_edit_contents p{
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.profile_edit_contents h5{
-  font-size: 12px;
-}
-.twitter-form{
-  border: 2px solid #ddd;
-}
-.twitter-form:focus{
-  outline: none;
-  border: 5px solid rgb(188, 205, 236);
-}
-
-.profile_upload{
-  width: 50%;
-  height: 250px;
-  background-color: white;
-}
-.profile_upload p{
-  text-align: center;
-  padding: 10px;
-}
-.profile_img{
-  width: 50%;
-  height: 120px;
-  margin: 0 auto;
-  background-color: #ddd;
-}
-.profile_img img{
-  width: 100%;
-  height: 100%;
-}
-.upload_btn{
-  text-align: center;
-  margin-top: 20px;
-}
-/* label {
-  width: 50%;
-  color: white;  
-  font-size: 10px;
-  background-color: #ff7d6e;
-  padding: 6px;
-} */
-
-.profile_uploadlabel{
-  width: 50%;
-  color: white;  
-  font-size: 10px;
-  background-color: #ff7d6e;
-  padding: 6px;
-}
-
-</style>

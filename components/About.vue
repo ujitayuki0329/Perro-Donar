@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <cliant-only> -->
+    <cliant-only>
         <div class="section-container2 mt-5">
           <h2 class="text-center text-white description-title">「わんちゃん好き」と「愛犬」をつなげるプラットフォーム
           </h2>
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-    <!-- </cliant-only> -->
+    </cliant-only>
   </div>
 </template>
 

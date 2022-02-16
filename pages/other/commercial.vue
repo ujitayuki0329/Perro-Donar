@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <client-only> -->
+    <client-only>
     <Header />
     <div id="container"> 
       <div id="page_title">
@@ -34,7 +34,7 @@
       
     <Footer />
     <Copylight />
-    <!-- </client-only> -->
+    </client-only>
   </div>
 </template>
 

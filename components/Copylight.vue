@@ -1,10 +1,10 @@
 <template>
   <div>
-    <!-- <client-only> -->
+    <client-only>
     <div class="copy-right text-center text-white">
       © 2021 Perro-Donar. All Rights Reserved.
     </div>
-    <!-- </client-only> -->
+    </client-only>
   </div>
 </template>
 

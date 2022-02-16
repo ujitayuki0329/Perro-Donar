@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <cliant-only> -->
+    <cliant-only>
         <div>
           <h2 class="mt-5  text-center description-title">動物愛護団体</h2>
           <p class="text-center text-gray mb-5 description-subtitle">
@@ -66,6 +66,6 @@
           </ul>
           <a href="/protection_group/protection_group" class="detail">もっと見る</a>
         </div>
-    <!-- </cliant-only> -->
+    </cliant-only>
   </div>
 </template>
