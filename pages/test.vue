@@ -6,7 +6,7 @@
      </span>
      <input
        type="text"
-       v-model="user.name"
+       v-model="name"
      >
    </label>
    <label>
@@ -15,7 +15,7 @@
      </span>
      <input
        type="text"
-       v-model="user.email"
+       v-model="email"
      >
    </label>
    <button
@@ -28,30 +28,23 @@
 </template>
 
 <script>
-import firebase from '@/plugins/firebase'
+import { getFirestore, collection, addDoc } from 'firebase/firestore'
 
 export default {
- data () {
-   return {
-     user: {
+  data () {
+    return {
        name: "",
        email: ""
-     },
-   }
- },
- methods: {
-   submit () {
-     const db = firebase.firestore()
-     let dbUsers = db.collection('users')
-     dbUsers
-       .add({
-         name: this.user.name,
-         email: this.user.email,
-       })
-       .then(ref => {
-         console.log('Add ID: ', ref.id)
-       })
-   },
- },
+    }
+  },
+  methods: {
+    submit () {
+      const db = getFirestore()
+      const docRef = addDoc(collection(db, 'users'), {
+        name: this.name,
+        email: this.email
+      })
+    }
+  }
 }
 </script>
