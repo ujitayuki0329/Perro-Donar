@@ -1,8 +1,7 @@
 import { initializeApp } from "firebase/app"
-import { getAnalytics } from "firebase/analytics"
 import { getFirestore } from "firebase/firestore"
+// import { getAnalytics } from "firebase/analytics"
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCRdzxixev2Fhgf1DFJLfsANqdUhk_tGwA",
   authDomain: "perro-donar-3e35b.firebaseapp.com",
@@ -13,9 +12,9 @@ const firebaseConfig = {
   measurementId: "G-4JNYRLV9WS"
 }
 
-const firebase = initializeApp(firebaseConfig)
-const database = getFirestore(firebase)
-const analytics = getAnalytics(firebase)
+const app = initializeApp(firebaseConfig)
+const db = getFirestore(app)
+// const analytics = getAnalytics(firebase)
 
-export default database;
+export default db;
 
