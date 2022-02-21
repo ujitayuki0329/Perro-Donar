@@ -45,8 +45,8 @@
 }
 
 .google-sign-contents {
-  width: 50%;
-  height: 50px;
+  width: 30%;
+  height: 40px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
@@ -186,7 +186,7 @@
 }
 
 .nav-item .nav-link .fas {
-  color: #aa9103;
+  /* color: #ddd; */
   padding-right: 5px;
 }
 

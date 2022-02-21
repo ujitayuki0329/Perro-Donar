@@ -134,7 +134,7 @@ export default {
       const auth = getAuth()
       const provider = new GoogleAuthProvider();
       signInWithPopup(auth, provider).then((result) => {
-        this.$router.push({path:'/'})
+        this.$router.push({path:'/user_page/profile/profile_edit/'})
       }).catch((error) => {
         console.log(error)
       })
