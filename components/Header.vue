@@ -95,6 +95,11 @@
             <p>新規会員登録がお済みでない方は <a href="/auth/register">こちら</a></p>
             <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
           </div>
+          <div class="google-sign-wrap" @click="signInWithGoogle">
+            <div class="google-sign-contents">
+              <img src="~/assets/img/google-btn.png" alt="">
+            </div>
+          </div>
         </div>
       </Modal>
     </cliant-only>
@@ -105,6 +110,7 @@
 <script>
 // import Modal from './Modal.vue'
 import Modal from './Modal'
+import {getAuth, signInWithPopup, GoogleAuthProvider} from "firebase/auth"
 
 
 export default {
@@ -124,6 +130,15 @@ export default {
     close_contact_modal() {
       this.contact_modal = false
     },
+    signInWithGoogle(){
+      const auth = getAuth()
+      const provider = new GoogleAuthProvider();
+      signInWithPopup(auth, provider).then((result) => {
+        this.$router.push({path:'/'})
+      }).catch((error) => {
+        console.log(error)
+      })
+    }
   },
 
   // mounted() {

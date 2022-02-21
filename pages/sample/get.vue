@@ -20,10 +20,10 @@ export default {
   data() {
     return{
       users: [],
-      users: {
-        name: "",
-        email: ""
-      }
+      // users: {
+      //   name: "",
+      //   email: ""
+      // }
     }
   },
   mounted() {
