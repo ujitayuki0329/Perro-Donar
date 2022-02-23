@@ -8,13 +8,19 @@
       <div id="auth">
         <button type="button" @click="SignUp">ユーザー作成</button>
       </div>
+      <div id="auth">
+        <button type="button" @click="SignIn">ログイン</button>
+      </div>
+      <div id="auth">
+        <button type="button" @click="Signout">ログアウト</button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import { getFirestore, collection, getDocs } from 'firebase/firestore'
-import {getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged, createUserWithEmailAndPassword} from "firebase/auth"
+import {getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword,signOut } from "firebase/auth"
 
 export default {
   data(){
@@ -41,6 +47,23 @@ export default {
       })
       .catch((error) => {
         alert(error.message)
+        console.log(error)
+      })
+    },
+    SignIn(){
+      const auth = getAuth()
+      signInWithEmailAndPassword(auth,this.email,this.password).then((user) => {
+        console.log('ログイン成功')
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+    },
+    Signout(){
+      const auth = getAuth()
+      signOut(auth),then(() => {
+        alert('ログアウトしました。')
+      }).catch((error) => {
         console.log(error)
       })
     }
