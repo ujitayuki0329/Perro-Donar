@@ -12,23 +12,23 @@
             <div class="account-information-title">
               <h2>口座情報</h2>
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>銀行名</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>支店名</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>口座番号(7桁)</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>口座種別</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>口座名義カナ(全角)</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>

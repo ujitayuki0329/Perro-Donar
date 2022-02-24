@@ -71,9 +71,6 @@
             </div>
           </div>
       </div>
-      <div class="profile-edit-link">
-        <p>退会は<a href="#">こちら</a>から</p>
-      </div>  
     </div>
     <Footer />
     <Copylight />

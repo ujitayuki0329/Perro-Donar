@@ -79,6 +79,14 @@
               </div>
             </div>
           </div>
+          <div class="mt-2 basic_infomation_btn" >
+            <a href="/user_page/profile/profile">
+            <button type="button" class="btn btn-outline-dark">保存</button>
+            </a>
+            <a href="/">
+            <button type="button" class="btn btn-outline-danger">キャンセル</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

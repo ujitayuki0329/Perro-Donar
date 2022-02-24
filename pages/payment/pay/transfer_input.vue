@@ -9,24 +9,24 @@
       <div class="container">
         <div class="payment-wrap">
           <div class="mypage-wrap">
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>振込可能額</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>振込申請金額</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>振込手数料</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
-            <div class="form-group">
+            <div class="pay-form-group">
               <p>振込金額</p>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
             </div>
           </div>
-          <div>
+          <div class="pay-form-group"> 
             <p>※振込には2~3日程かかる場合がございます。</p>
           </div>
           <div class="check-button">

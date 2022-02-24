@@ -43,7 +43,7 @@
               </li>
             </ul>
           </div>
-          <div class="follow"> <div class="icon-twitter"></div> Follow</div>
+          <!-- <div class="follow"> <div class="icon-twitter"></div> Follow</div> -->
         </div>
       </div>
       <div class="profile-edit-link">

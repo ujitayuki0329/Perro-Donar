@@ -10,7 +10,7 @@
         <table>
           <tr>
             <th>WEBサービス提供者</th>
-            <td>PERRO DONAR株式会社</td>
+            <td>PERRO DONAR</td>
           </tr>
           <tr>
             <th>サイト代表者名</th>

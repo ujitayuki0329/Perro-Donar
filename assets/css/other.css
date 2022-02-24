@@ -39,6 +39,7 @@ table th {
   color: white;
   text-align: center;
   padding: 10px;
+  font-size: 12px;
 }
 
 table td {
@@ -48,6 +49,7 @@ table td {
   background-color: #eee;
   padding: 10px;
   font-weight: bold;
+  font-size: 12px;
 }
 
 /* about */

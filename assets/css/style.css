@@ -238,7 +238,7 @@ input:focus {
   max-width: 248px;
   letter-spacing: 0.05em;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12px;
 }
 .Form-Item-Label.isMsg {
   margin-top: 8px;
@@ -254,7 +254,7 @@ input:focus {
   text-align: center;
   background: #ff7d6e;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 .Form-Item-Input {
   border: 1px solid #ddd;
@@ -267,7 +267,7 @@ input:focus {
   width: 100%;
   max-width: 410px;
   background: #eaedf2;
-  font-size: 18px;
+  font-size: 12px;
 }
 .Form-Item-Textarea {
   border: 1px solid #ddd;
@@ -315,7 +315,7 @@ input:focus {
 }
 
 #page_title h1 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin: 0 auto;
   padding: 20px;
@@ -478,7 +478,7 @@ a.btn--orange:hover {
 
 .card-horizontal-list li > a {
   margin: 5px;
-  width: 150px;
+  width: 125px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px #ccc;
@@ -554,6 +554,7 @@ a.btn--orange:hover {
 
 /* 詳細(もっと見る) */
 .detail {
+  font-size: 12px;
   color: #ff7d6e;
   float: right;
   padding-right: 30px;
@@ -570,6 +571,7 @@ a.btn--orange:hover {
 }
 
 .description-title {
+  font-size: 16px;
   padding: 30px 20px 0 20px;
 }
 
@@ -581,7 +583,7 @@ a.btn--orange:hover {
 
 .description h2 {
   height: 40px;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -630,6 +632,7 @@ a.btn--orange:hover {
 }
 
 a.btn-radius-solid {
+  font-size: 12px;
   border: 1px solid #ccc;
   background: #f1e767;
   background: -webkit-gradient(
@@ -727,10 +730,16 @@ a.btn-radius-solid:hover {
   padding: 6px;
 }
 
+.pay-form-group p {
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 0;
+}
+
 /* フッター */
 h1 {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   padding: 1em 0;
 }
@@ -787,6 +796,7 @@ textarea {
 
 .complet-wrap {
   text-align: center;
+  font-size: 12px;
 }
 
 .transfer-detail {
@@ -799,7 +809,7 @@ textarea {
 }
 
 .transfer-detail-title h2 {
-  font-size: 15px;
+  font-size: 12px;
   padding: 10px;
   font-weight: bold;
 }
@@ -809,7 +819,7 @@ textarea {
 }
 
 .transfer-detail-content p {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .account-information {
@@ -817,7 +827,7 @@ textarea {
 }
 
 .account-information-title h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -826,9 +836,25 @@ textarea {
   display: none;
 }
 
+#footer-index .list-unstyled li a {
+  font-size: 12px;
+}
+
+#footer-logo p {
+  padding: 20px;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 480px) {
   #nav-bar .nav-bar-title h1 {
     font-size: 10px;
+  }
+  .google-sign-contents {
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
   }
   .form-wrap {
     width: 90%;
@@ -843,16 +869,16 @@ textarea {
   }
 
   .register_title h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .register_title h1 .fas {
     margin: 20px 5px 0 0;
   }
   .check-button a {
-    font-size: 13px;
+    font-size: 12px;
   }
   .register-button a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .Form {
@@ -869,7 +895,7 @@ textarea {
     max-width: inherit;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 12px;
   }
   .Form-Item-Label.isMsg {
     margin-top: 0;
@@ -937,7 +963,7 @@ textarea {
   }
 
   .description h2 {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     height: 40px;
     margin-top: -20px;
@@ -949,12 +975,12 @@ textarea {
 
   .description-title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12px;
     padding-top: -50px;
   }
 
   .description-subtitle {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .description {
@@ -994,14 +1020,6 @@ textarea {
     overflow: scroll;
     background-color: white;
     border-radius: 20px;
-  }
-
-  .google-sign-contents {
-    width: 50%;
-    height: 40px;
-    margin: 0 auto;
-    margin-top: 20px;
-    text-align: center;
   }
 
   /* ヘッダー */

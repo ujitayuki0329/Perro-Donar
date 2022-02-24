@@ -65,7 +65,7 @@
 
         <!-- rannking -->
         <div>
-          <h1 class="slider_ttl mt-5"><span style="color: green;">人気</span>ランキング</h1>
+          <h1 class="slider_ttl mt-5">ランキング</h1>
             <ul class="horizontal_scroll rank">
               <ul class="card-horizontal-list text-center">
                 <li>
@@ -160,6 +160,198 @@
                 </li>
               </ul>  
             </ul>
+          <a href="/list/popular/" class="detail">もっと見る</a>
+        </div>
+        <div>
+          <h1 class="slider_ttl mt-5">お気に入り</h1>
+              <ul class="card-horizontal-list text-center">
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test1.png">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test2.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test3.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test4.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test5.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test6.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test7.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test5.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test6.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>  
+          <a href="/list/popular/" class="detail">もっと見る</a>
+        </div>
+        <div>
+          <h1 class="slider_ttl mt-5">スポンサー一覧</h1>
+              <ul class="card-horizontal-list text-center">
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test1.png">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test2.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test3.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test4.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test5.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test6.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test7.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test5.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/user_page/dog_detail/dog_detail/">
+                    <img src="~/assets/img/test6.jpg">
+                    <div>
+                      <h3>name</h3>
+                      <p>dog bread</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>  
           <a href="/list/popular/" class="detail">もっと見る</a>
         </div>
     </cliant-only>

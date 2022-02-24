@@ -16,10 +16,10 @@
               </form>
             </div>
             <div class="header-nav-item">
-              <a class="header-button header-post">新規投稿</a>
+              <a href="/auth/register/" class="header-button header-post">新規投稿</a>
             </div>
             <div class="header-nav-item">
-              <a class="header-button header-login">ログイン</a>
+              <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
             </div>
             <div class="header-nav-item">
               <img src="https://placehold.jp/50x50.png" class="header-avatar" />

@@ -107,8 +107,9 @@ h2 {
 
 .nav-tabs-wrapper ul li {
   width: auto;
-  height: 50px;
+  height: 40px;
   padding: 10px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -122,6 +123,7 @@ h2 {
 .form-group p {
   margin: 0;
   padding: 10px 10px 10px 5px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -131,7 +133,8 @@ h2 {
 }
 
 .form-control::placeholder {
-  opacity: 0.3;
+  font-size: 12px;
+  opacity: 0.5;
 }
 
 .m-form-textarea {
@@ -148,7 +151,7 @@ h2 {
 
 .total-place {
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
   line-height: 10px;
 }
@@ -469,7 +472,7 @@ header {
   display: block;
   overflow: hidden;
   position: relative;
-  padding-bottom: 2em;
+  /* padding-bottom: 2em; */
   -moz-border-radius-topleft: 8px;
   -webkit-border-top-left-radius: 8px;
   border-top-left-radius: 8px;
@@ -479,7 +482,7 @@ header {
 }
 
 .profile-container {
-  width: 90%;
+  width: 50%;
   margin: 1em auto 1em auto;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -491,6 +494,10 @@ header {
   -webkit-box-shadow: #bdc3c7 0 5px 5px;
   -moz-box-shadow: #bdc3c7 0 5px 5px;
   box-shadow: #bdc3c7 0 5px 5px;
+}
+.profile-container p {
+  padding: 10px;
+  margin: 0;
 }
 
 .mypage-container {
@@ -695,7 +702,7 @@ header {
 }
 
 .profile_container .prolile-wrap h3 {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -731,6 +738,7 @@ header {
 
 .bank-information-title p {
   font-weight: bold;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 
@@ -809,6 +817,10 @@ ul.topnav li.right {
   display: none !important;
 }
 
+.basic_infomation_btn .btn {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 480px) {
   .profile-spmenu {
     display: block !important;
@@ -881,5 +893,19 @@ ul.topnav li.right {
     overflow: hidden;
     width: 120px;
     height: 360px;
+  }
+  .profile-container {
+    width: 90%;
+    margin: 1em auto 1em auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    padding-bottom: 1.5em;
+    background-color: #dde1e2;
+    -webkit-box-shadow: #bdc3c7 0 5px 5px;
+    -moz-box-shadow: #bdc3c7 0 5px 5px;
+    box-shadow: #bdc3c7 0 5px 5px;
   }
 }

@@ -19,8 +19,8 @@
             </div>
             <div class="form-group">
               <p>性別</p>
-              <input type="radio" name="sex" value="1" style="transform:scale(2.0); margin:10px;" checked="checked">男の子
-              <input type="radio" name="sex" value="2" style="transform:scale(2.0); margin:10px;">女の子
+              <input type="radio" name="sex" value="1" style="transform:scale(2.0); margin:10px;" checked="checked"><span style="font-size:12px;">男の子</span>
+              <input type="radio" name="sex" value="2" style="transform:scale(2.0); margin:10px;"><span style="font-size:12px;">女の子</span>
             </div>
             <div class="form-group">
               <p>犬種</p>
@@ -37,8 +37,8 @@
           <div>
             <div class="form-group">
               <!-- <p>公開・非公開</p> -->
-              <input type="radio" name="release" value="1" style="transform:scale(2.0); margin:10px;" checked="checked">公開
-              <input type="radio" name="release" value="2" style="transform:scale(2.0); margin:10px;">非公開
+              <input type="radio" name="release" value="1" style="transform:scale(2.0); margin:10px;" checked="checked"><span style="font-size:12px;">公開</span>
+              <input type="radio" name="release" value="2" style="transform:scale(2.0); margin:10px;"><span style="font-size:12px;">非公開</span>
             </div>
           </div>
 
@@ -62,12 +62,12 @@
           </div>
           
 
-          <div class="mt-5">
+          <div class="mt-4">
             <a href="/user_page/my_dog/">
-            <button type="button" class="btn btn-outline-dark">保存</button>
+            <button type="button" class="btn btn-outline-dark" style="font-size:12px;">保存</button>
             </a>
             <a href="/">
-            <button type="button" class="btn btn-outline-danger">キャンセル</button>
+            <button type="button" class="btn btn-outline-danger" style="font-size:12px;">キャンセル</button>
             </a>
           </div>
 
