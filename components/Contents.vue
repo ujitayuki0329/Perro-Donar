@@ -2,12 +2,8 @@
   <div>
     <cliant-only>
         <div>
-          <h2 class="mt-5  text-center description-title">新しいわんちゃん</h2>
-          <p class="text-center text-gray mb-5 description-subtitle">
-            ＜気になるワンちゃんを見つけよう＞
-          </p>
           <!-- newわんちゃん -->
-          <h1 class="slider_ttl"><span style="color:red;">NEW</span>わんちゃん</h1>
+          <h1 class="slider_ttl"><span style="color:#ff7d6e;">NEW DOG</span></h1>
           <ul class="card-horizontal-list text-center">
             <li>
               <a href="/user_page/dog_detail/dog_detail/">
@@ -69,7 +65,7 @@
 
         <!-- rannking -->
         <div>
-          <h1 class="slider_ttl mt-5"><span style="color: green;">人気</span>わんちゃんランキング</h1>
+          <h1 class="slider_ttl mt-5"><span style="color: green;">人気</span>ランキング</h1>
             <ul class="horizontal_scroll rank">
               <ul class="card-horizontal-list text-center">
                 <li>

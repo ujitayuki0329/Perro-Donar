@@ -69,11 +69,11 @@
               </div>
             </div>
           </div>
-          <div class="text-center p-5">
-            <a href="/list/search/" class="btn btn--orange serch-button">検索する</a>
+          <div class="register_btn">
+            <a href="/" class="btn btn-radius-solid" style="font-weight: bold;">検索</a>  
           </div>
-          <div class="wave">
-          </div>
+          <!-- <div class="wave">
+          </div> -->
         </div>
     </cliant-only>
   </div>

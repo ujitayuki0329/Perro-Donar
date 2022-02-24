@@ -1,74 +1,32 @@
 <template>
   <div>
     <cliant-only>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"><img src="~/assets/img/header.logo.png" alt="ヘッダーロゴ" height="80"></a>
-          <!-- <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-      
-          <div class="collapse navbar-collapse sp-menu" id="navbarSupportedContent">
-            <!-- <form class="d-flex">
-              <input class="form-control me-2" type="search" aria-label="Search" placeholder="フリーワードを入力">　
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/user_page/publishe/"><i class="fas fa-paw icon"></i>愛犬を登録する</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/user_page/favorite"><i class="fas fa-heart icon"></i>お気に入り</a>
-              </li>
-            </ul>
-            <!-- <div class="user-button">
-            <div class="test">
-              <a href="/auth/register/" class="btn btn-outline-danger">会員登録</a>
-              <a href="#" class="btn btn-outline-info" @click="open_contact_modal">ログイン</a>
-              <a href="#" class="btn btn-outline-danger" @click="open_register_modal">会員登録</a>
-              <a href="#" class="btn btn-outline-info" @click="open_login_modal">ログイン</a>
-            </div>
-            </div> -->
-            
+      <header class="header-3">
+        <div class="header-inner">
+          <div class="logo">
+            <a href="/">
+              <img src="~/assets/img/header.logo.png" alt="ヘッダーロゴ">
+            </a>
           </div>
-          <div class="hamburger-menu">
-            <input type="checkbox" id="menu-btn-check">
-            <label for="menu-btn-check" class="menu-btn"><span></span></label>
-            <!--ここからメニュー-->
-            <div class="menu-content">
-              <div class="menu-content-title">
-                <h1><i class="fas fa-paw"></i>MENU</h1>
-              </div>
-              <ul>
-                <div class="user-button" style="padding:10px;">
-                  <a href="/auth/register/" class="btn btn-outline-danger">会員登録</a>
-                  <a href="#" class="btn btn-outline-info" @click="open_contact_modal">ログイン</a>
-                </div>
-                <li>
-                    <a href="/user_page/profile/mypage"><img src="~/assets/img/avater.png" alt=""><span class="user_name">キャンちょめ</span>さん</a>
-                </li>
-                <li>
-                    <a href="/user_page/publishe/"><i class="fas fa-paw"></i>愛犬を掲載する</a>
-                </li>
-                <li>
-                    <a href="/user_page/favorite/"><i class="far fa-heart"></i>お気に入り</a>
-                </li>
-                <li>
-                    <a href="/user_page/sponser/"><i class="far fa-handshake"></i>スポンサー一覧</a>
-                </li>
-                <li>
-                    <a href="/user_page/my_dog/"><i class="fas fa-dog"></i>My Dog一覧</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-sign-out-alt"></i>ログアウト</a>
-                </li>
-              </ul>
+          <nav class="header-nav">
+            <div class="header-nav-item">
+              <form class="form2">
+                <input type="search" class="form2-input" placeholder="search" />
+                <button class="form2-button"><i class="fa fa-search"></i></button>
+              </form>
             </div>
-            <!--ここまでメニュー-->
-          </div>
+            <div class="header-nav-item">
+              <a class="header-button header-post">新規投稿</a>
+            </div>
+            <div class="header-nav-item">
+              <a class="header-button header-login">ログイン</a>
+            </div>
+            <div class="header-nav-item">
+              <img src="https://placehold.jp/50x50.png" class="header-avatar" />
+            </div>
+          </nav>
         </div>
-      </nav>
+      </header>
       <nav id="nav-bar">
         <div class="nav-bar-title">
           <h1>わんちゃん好きと愛犬をつなぐプラットフォーム！まずは無料の会員登録から</h1>
@@ -150,6 +108,117 @@ export default {
   // } 
 }
 </script>
+
+<style>
+.header-3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1024px;
+  height: 60px;
+  padding: 0 0.8em;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.logo img {
+  width: 120px;
+  height: 50px;
+}
+
+.header-button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header-login {
+  color: #999;
+}
+
+.header-post {
+  font-weight: bold;
+  color: #fff;
+  background: #ff7d6e;
+  border: 1px #ff7d6e solid;
+  border-radius: 3px;
+}
+
+.header-avatar {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.form2 {
+  position: relative;
+}
+
+.form2-input {
+  box-sizing: border-box;
+  width: 140px;
+  height: 28px;
+  padding: 0 8px 0 30px;
+  margin: 5px 0;
+  font-size: 12px;
+  color: #333;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.3s;
+  -webkit-appearance: none;
+}
+
+.form2-input:focus {
+  border: 1px solid #ff7d6e;
+}
+
+.form2-button {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  box-sizing: content-box;
+  width: 30px;
+  height: 38px;
+  padding: 0;
+  font-size: 16px;
+  vertical-align: vertical-align;
+  pointer-events: none;
+  background: inherit;
+  border: 0;
+  opacity: 0.54;
+}
+
+@media screen and (max-width: 480px) {
+  .form2 {
+    display: none;
+  }
+  .header-button{
+    font-size: 9px;
+  }
+}
+</style>
 
 
 

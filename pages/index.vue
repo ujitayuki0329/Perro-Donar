@@ -20,8 +20,8 @@
             <img class="carousel-img" src="~/assets/img/slide3.png" alt="スライド3">
           </slide> -->
         </carousel>
-        <Slider />
-        <Search />
+        <!-- <Slider /> -->
+        <!-- <Search /> -->
         <Contents />
         <About />
         <Protection />

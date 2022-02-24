@@ -324,9 +324,10 @@ input:focus {
 
 .search_label {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  padding: 15px;
+  padding: 8px;
   background: white;
   width: 260px;
+  height: 40px;
   display: inline-block;
   position: relative;
 }
@@ -339,7 +340,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   color: #909090;
   border-radius: 0;
   width: 275px;
@@ -349,7 +350,7 @@ select {
 
 .search_label:after {
   content: "\25bc";
-  font-size: 16px;
+  font-size: 12px;
   color: white;
   background: #f3a1a1;
   width: 42px;
@@ -360,6 +361,19 @@ select {
   bottom: 0;
   position: absolute;
   pointer-events: none;
+}
+
+.serch-btn {
+  padding: 20px;
+}
+.serch-btn .btn {
+  height: 20px;
+  padding: 20px;
+  font-size: 12px;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
 }
 
 option {
@@ -419,6 +433,7 @@ a.btn--orange:hover {
   width: 100%;
   background: #3e5770;
   bottom: 0;
+  z-index: 1;
 }
 
 .wave::before,
@@ -520,7 +535,7 @@ a.btn--orange:hover {
   margin: 0 0 20px 0;
   background-color: #e5e5e5;
   text-indent: 8px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   box-sizing: border-box;
 }
