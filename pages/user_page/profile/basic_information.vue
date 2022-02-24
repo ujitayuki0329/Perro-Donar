@@ -36,27 +36,27 @@
               <p>＜個人情報＞</p>
             </div>
             <div class="profile-wrap-item">
-              <h3><span>必須</span>ユーザーネーム</h3>
+              <h3>ユーザーネーム</h3>
               <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ujita yuki" value="">
             </div>
             <div class="profile-wrap-item">
-              <h3><span>必須</span>メールアドレス</h3>
+              <h3>メールアドレス</h3>
               <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="test@test.com" value="">
             </div>
             <div class="profile-wrap-item">
-              <h3><span>必須</span>パスワード</h3>
+              <h3>パスワード</h3>
               <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="test1234" value="">
             </div>
             <div class="profile-wrap-item">
-              <h3>お名前</h3>
+              <h3><span>必須</span>お名前</h3>
               <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="氏田 裕樹" value="">
             </div>
             <div class="profile-wrap-item">
-              <h3>電話番号</h3>
+              <h3><span>必須</span>電話番号</h3>
               <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="09012345678" value="">
             </div>
             <div class="profile-wrap-item">
-              <h3>住所</h3>
+              <h3><span>必須</span>住所</h3>
               <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="埼玉県さいたま市1-1-1" value="">
             </div>
           </div>

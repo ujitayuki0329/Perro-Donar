@@ -45,6 +45,10 @@
   height: auto;
 }
 
+.introduce-wrap table {
+  font-size: 12px;
+}
+
 #attachment label {
   /* ボタン部分の見た目（任意） */
   margin-top: 20px;
@@ -435,6 +439,7 @@ table th:after {
 }
 
 .detail-tab-content {
+  font-size: 12px;
   height: 0;
   opacity: 0;
   padding: 0 20px;
@@ -831,22 +836,22 @@ ul.topnav li.right {
     align-items: center;
   }
   .like .btn {
-    font-size: 13px;
+    font-size: 12px;
     top: 50%;
     margin-top: -0.5em;
     height: 100%;
   }
   .detail-tab-label {
-    font-size: 13px;
+    font-size: 12px;
   }
   .detail-tab-content {
-    font-size: 13px;
+    font-size: 12px;
   }
   .my_name table th {
-    font-size: 13px;
+    font-size: 12px;
   }
   .my_name table td {
-    font-size: 13px;
+    font-size: 12px;
   }
   .dog-setting-wrap {
     padding: 10px;

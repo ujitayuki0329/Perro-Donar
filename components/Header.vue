@@ -16,7 +16,7 @@
               </form>
             </div>
             <div class="header-nav-item">
-              <a href="/auth/register/" class="header-button header-post">新規投稿</a>
+              <a href="/auth/register/" class="header-button header-post">新規登録</a>
             </div>
             <div class="header-nav-item">
               <a class="header-button header-login" @click="open_contact_modal">ログイン</a>

@@ -14,17 +14,25 @@
               <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ポチ" value="">
             </div>
             <div class="form-group">
+              <p>犬種</p>
+              <input type="text" id="dog_breed-field" name="dog_breed" class="form-control border-input" placeholder="ボストンテリア" value="">
+            </div>
+            <div class="form-group">
               <p>年齢</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="2才" value="">
+              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="2歳" value="">
+            </div>
+            <div class="form-group">
+              <p>出身地</p>
+              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="埼玉県" value="">
+            </div>
+            <div class="form-group">
+              <p>生年月日</p>
+              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="2022/3/29" value="">
             </div>
             <div class="form-group">
               <p>性別</p>
               <input type="radio" name="sex" value="1" style="transform:scale(2.0); margin:10px;" checked="checked"><span style="font-size:12px;">男の子</span>
               <input type="radio" name="sex" value="2" style="transform:scale(2.0); margin:10px;"><span style="font-size:12px;">女の子</span>
-            </div>
-            <div class="form-group">
-              <p>犬種</p>
-              <input type="text" id="dog_breed-field" name="dog_breed" class="form-control border-input" placeholder="ボストンテリア" value="">
             </div>
             <div class="form-group">
               <p>画像アップロード</p>

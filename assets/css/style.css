@@ -234,6 +234,7 @@ input:focus {
   border-bottom: 1px solid #ddd;
 }
 .Form-Item-Label {
+  margin: 0;
   width: 100%;
   max-width: 248px;
   letter-spacing: 0.05em;

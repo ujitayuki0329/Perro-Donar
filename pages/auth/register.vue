@@ -7,8 +7,8 @@
       <div class="register_body">
         <div class="Form">
           <div class="Form-Item">
-            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-            <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+            <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>ユーザーネーム</p>
+            <input type="text" class="Form-Item-Input" placeholder="例）ぺろドナで表示される名前">
           </div>
           <div class="Form-Item">
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
