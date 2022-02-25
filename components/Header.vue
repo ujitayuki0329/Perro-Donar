@@ -217,6 +217,9 @@ export default {
   .header-button{
     font-size: 9px;
   }
+  .header-nav-item{
+    margin-left: 0;
+  }
 }
 </style>
 

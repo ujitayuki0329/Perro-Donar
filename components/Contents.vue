@@ -256,7 +256,7 @@
                   </a>
                 </li>
               </ul>  
-          <a href="/list/popular/" class="detail">もっと見る</a>
+          <a href="/user_page/favorite/" class="detail">もっと見る</a>
         </div>
         <div>
           <h1 class="slider_ttl mt-5">スポンサー一覧</h1>
@@ -352,7 +352,7 @@
                   </a>
                 </li>
               </ul>  
-          <a href="/list/popular/" class="detail">もっと見る</a>
+          <a href="/user_page/sponser/" class="detail">もっと見る</a>
         </div>
     </cliant-only>
   </div>

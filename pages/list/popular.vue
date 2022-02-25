@@ -6,7 +6,7 @@
       <div id="page_title">
         <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>人気わんちゃん一覧</h1>
       </div>
-      <div class="container">
+      <div class="container pc">
         <div class="card-group">
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
@@ -62,6 +62,101 @@
           </div>
         </div>
       </div>
+
+       <div class="sp">
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      
       <div class="nav-links">
           <a class="prev page-numbers" href="#">«</a><!-- 現在の前のページへのリンク -->
           <a class="page-numbers" href="#">1</a>

@@ -6,7 +6,7 @@
       <div id="page_title">
         <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>お気に入り一覧</h1>
       </div>
-      <div class="container">
+      <div class="container pc">
         <div class="card-group">
           <div class="card">
             <img src="~/assets/img/dog-img/ボストンテリア.png">
@@ -62,6 +62,100 @@
           </div>
         </div>
       </div>
+      <div class="sp">
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+        <a href="/user_page/dog_detail/dog_detail/">
+          <div class="dog-list-block">
+            <div class="dog-block-img">
+              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
+            </div>
+            <div class="dog-block-contents">
+              <p class="dog-block-name">キャンちょめ</p>
+              <p>2018年10月31日</p>
+              <p>女の子</p>
+              <p>掲載日2021年05月05日</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      
       <div class="nav-links">
           <a class="prev page-numbers" href="#">«</a><!-- 現在の前のページへのリンク -->
           <a class="page-numbers" href="#">1</a>
@@ -86,3 +180,53 @@ import '@/assets/css/user_page.css'
 
 export default{}
 </script>
+
+<style>
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+@media screen and (max-width: 480px) {
+  .pc { display: none !important; }
+  .sp { display: block !important; }
+}
+
+.dog-list-block{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  height: 120px;
+  box-shadow: 3px 3px 6px -2px #555,
+  3px 3px 8px rgba(255,255,255,0.8) inset;
+}
+
+.dog-block-img{
+  width: 50%;
+  height: 120px;
+  border-right: 1px solid #ddd;
+}
+
+.dog-block-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.dog-block-contents{
+  display: block;
+  width: 50%;
+  height: 120px;
+  padding: 20px;
+}
+
+.dog-block-contents p{
+  margin: 0;
+  font-size: 10px;
+}
+
+.dog-block-name{
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+</style>
