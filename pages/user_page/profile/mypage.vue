@@ -36,10 +36,10 @@
             <header>
               <div class="bio">
                 <img src="http://www.croop.cl/UI/twitter/images/up.jpg" alt="background" class="bg">
-                <div class="desc">
+                <!-- <div class="desc">
                   <h3>@carlf</h3>
                   <p>Carl Fredricksen is the protagonist in Up. He also appeared in Dug's Special Mission as a minor character.</p>
-                </div>
+                </div> -->
               </div>
               <div class="avatarcontainer">
                 <img src="~/assets/img/avater.png" alt="avatar" class="avatar">

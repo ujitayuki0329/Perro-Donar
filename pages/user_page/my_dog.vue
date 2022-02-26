@@ -63,96 +63,90 @@
 
       <div class="sp">
         <a href="/user_page/dog_detail/dog_detail/">
-          <div class="dog-list-block">
-            <div class="dog-block-img">
+          <div class="mydog-list-block">
+            <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
             </div>
-            <div class="dog-block-contents">
-              <p class="dog-block-name">キャンちょめ</p>
+            <div class="mydog-block-contents">
+              <p class="mydog-block-name">キャンちょめ</p>
               <p>2018年10月31日</p>
               <p>女の子</p>
+              <p>埼玉県</p>
               <p>掲載日2021年05月05日</p>
             </div>
           </div>
         </a>
         <a href="/user_page/dog_detail/dog_detail/">
-          <div class="dog-list-block">
-            <div class="dog-block-img">
+          <div class="mydog-list-block">
+            <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
             </div>
-            <div class="dog-block-contents">
-              <p class="dog-block-name">キャンちょめ (非公開)</p>
+            <div class="mydog-block-contents">
+              <p class="mydog-block-name">キャンちょめ (非公開)</p>
               <p>2018年10月31日</p>
               <p>女の子</p>
+              <p>東京都</p>
               <p>掲載日2021年05月05日</p>
             </div>
           </div>
         </a>
         <a href="/user_page/dog_detail/dog_detail/">
-          <div class="dog-list-block">
-            <div class="dog-block-img">
+          <div class="mydog-list-block">
+            <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
             </div>
-            <div class="dog-block-contents">
-              <p class="dog-block-name">キャンちょめ</p>
+            <div class="mydog-block-contents">
+              <p class="mydog-block-name">キャンちょめ</p>
               <p>2018年10月31日</p>
               <p>女の子</p>
+              <p>埼玉県</p>
               <p>掲載日2021年05月05日</p>
             </div>
           </div>
         </a>
         <a href="/user_page/dog_detail/dog_detail/">
-          <div class="dog-list-block">
-            <div class="dog-block-img">
+          <div class="mydog-list-block">
+            <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
             </div>
-            <div class="dog-block-contents">
-              <p class="dog-block-name">キャンちょめ (非公開)</p>
+            <div class="mydog-block-contents">
+              <p class="mydog-block-name">キャンちょめ (非公開)</p>
               <p>2018年10月31日</p>
               <p>女の子</p>
+              <p>東京都</p>
               <p>掲載日2021年05月05日</p>
             </div>
           </div>
         </a>
         <a href="/user_page/dog_detail/dog_detail/">
-          <div class="dog-list-block">
-            <div class="dog-block-img">
+          <div class="mydog-list-block">
+            <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
             </div>
-            <div class="dog-block-contents">
-              <p class="dog-block-name">キャンちょめ</p>
+            <div class="mydog-block-contents">
+              <p class="mydog-block-name">キャンちょめ</p>
               <p>2018年10月31日</p>
               <p>女の子</p>
+              <p>埼玉県</p>
               <p>掲載日2021年05月05日</p>
             </div>
           </div>
         </a>
         <a href="/user_page/dog_detail/dog_detail/">
-          <div class="dog-list-block">
-            <div class="dog-block-img">
+          <div class="mydog-list-block">
+            <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
             </div>
-            <div class="dog-block-contents">
-              <p class="dog-block-name">キャンちょめ (非公開)</p>
+            <div class="mydog-block-contents">
+              <p class="mydog-block-name">キャンちょめ (非公開)</p>
               <p>2018年10月31日</p>
               <p>女の子</p>
+              <p>東京都</p>
               <p>掲載日2021年05月05日</p>
             </div>
           </div>
         </a>
-        <a href="/user_page/dog_detail/dog_detail/">
-          <div class="dog-list-block">
-            <div class="dog-block-img">
-              <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
-            </div>
-            <div class="dog-block-contents">
-              <p class="dog-block-name">キャンちょめ</p>
-              <p>2018年10月31日</p>
-              <p>女の子</p>
-              <p>掲載日2021年05月05日</p>
-            </div>
-          </div>
-        </a>
+        
       </div>
     </div>
       

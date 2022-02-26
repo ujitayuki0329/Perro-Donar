@@ -1,6 +1,6 @@
 <template>
   <div>
-    <client-only>
+    <!-- <client-only> -->
     <div class="index_wrap">
       <Header />
       <div id="container"> 
@@ -115,6 +115,26 @@
             <div class="mt-5 text-center">
               <a href="/chat/chat" class="btn btn-radius-solid" style="font-weight: bold;">メッセージを送る</a>
             </div> -->
+            <div class="publish-user-container">
+              <div class="publish-user-title">
+                <h1>掲載者情報</h1>
+              </div>
+              <a href="/user_page/profile/profile/">
+                <div class="publish-user-block">
+                  <div class="publish-user-innerblock">
+                    <div class="mydog-block-img">
+                      <img src="~/assets/img/avater.png" alt="">
+                    </div>
+                    <div class="mydog-block-contents">
+                      <p class="mydog-block-name">ユーザーネームさん</p>
+                      <p>一般会員</p>
+                      <p>埼玉県</p>
+                      <p>掲載数:5件</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -122,7 +142,7 @@
       <Footer />
       <Copylight />
     </div>
-    </client-only>
+    <!-- </client-only> -->
   </div>
 </template>
 
@@ -170,3 +190,31 @@ export default{
   }
 }
 </script>
+
+<style>
+.publish-user-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .publish-user-title {
+    background-color: #ddd;
+  }
+  .publish-user-title h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .publish-user-block {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  .publish-user-innerblock {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+     box-shadow: 3px 3px 6px -2px #555,
+      3px 3px 8px rgba(255, 255, 255, 0.8) inset;
+  }
+</style>
