@@ -417,6 +417,7 @@ a.btn--orange:hover {
   background-image: url(../img/test.png);
   background-size: cover;
   height: 100%;
+  padding: 20px;
 }
 
 .section-container2 {
@@ -746,23 +747,23 @@ a.btn-radius-solid:hover {
 
 .dog-list-block {
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  border: 1px solid #ddd;
-  margin-bottom: 10px;
-  height: 120px;
-  box-shadow: 3px 3px 6px -2px #555, 3px 3px 8px rgba(255, 255, 255, 0.8) inset;
+  border-top: 1px solid #ddd;
+  height: auto;
 }
 
 .dog-block-img {
   width: 50%;
   height: 120px;
-  border-right: 1px solid #ddd;
+  margin: 10px 0 10px 0;
 }
 
 .dog-block-img img {
   width: 100%;
   height: 100%;
+  padding: 0 20px 0 20px;
+  object-fit: cover;
 }
 
 .dog-block-contents {
@@ -770,6 +771,7 @@ a.btn-radius-solid:hover {
   width: 50%;
   height: 120px;
   padding: 20px;
+  margin: 10px 0 10px 0;
 }
 
 .dog-block-contents p {
@@ -782,6 +784,82 @@ a.btn-radius-solid:hover {
   font-weight: bold;
   font-size: 12px;
   padding-bottom: 10px;
+}
+
+.serch-container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+.search-title {
+  width: 100%;
+  height: auto;
+  background-color: #ddd;
+}
+
+.search-title h1 {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+}
+
+.freeword-box input {
+  width: 100%;
+  border: none;
+}
+
+::placeholder {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.cp_ipselect {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+.cp_ipselect select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+  display: none;
+}
+.cp_ipselect.cp_sl01 {
+  position: relative;
+  border: none;
+  border-radius: 2px;
+  background: #ffffff;
+}
+.cp_ipselect.cp_sl01::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+.cp_ipselect.cp_sl01 select {
+  padding: 8px 38px 8px 8px;
+  color: #666666;
 }
 
 /* フッター */
@@ -1007,6 +1085,9 @@ textarea {
     font-size: 10px;
     background-color: #ff7d6e;
     padding: 6px;
+  }
+  .serch-container {
+    width: 100%;
   }
 }
 

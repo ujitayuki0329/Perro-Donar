@@ -72,8 +72,8 @@
           <div class="register_btn">
             <a href="/" class="btn btn-radius-solid" style="font-weight: bold;">検索</a>  
           </div>
-          <!-- <div class="wave">
-          </div> -->
+          <div class="wave">
+          </div>
         </div>
     </cliant-only>
   </div>

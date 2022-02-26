@@ -8,6 +8,10 @@ $copyright: gray;
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: $a;
 }
