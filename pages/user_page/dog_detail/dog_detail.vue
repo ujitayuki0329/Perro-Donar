@@ -191,30 +191,3 @@ export default{
 }
 </script>
 
-<style>
-.publish-user-container {
-    width: 100%;
-    margin-top: 50px;
-  }
-  .publish-user-title {
-    background-color: #ddd;
-  }
-  .publish-user-title h1 {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0;
-  }
-  .publish-user-block {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ddd;
-  }
-  .publish-user-innerblock {
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-     box-shadow: 3px 3px 6px -2px #555,
-      3px 3px 8px rgba(255, 255, 255, 0.8) inset;
-  }
-</style>

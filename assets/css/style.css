@@ -1153,6 +1153,30 @@ textarea {
   .serch-container {
     width: 100%;
   }
+
+  .publish-user-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .publish-user-title {
+    background-color: #ddd;
+  }
+  .publish-user-title h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .publish-user-block {
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  .publish-user-innerblock {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    box-shadow: 3px 3px 6px -2px #555,
+      3px 3px 8px rgba(255, 255, 255, 0.8) inset;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1228,27 +1252,6 @@ textarea {
   .card-group > .card + .card {
     margin-left: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.125);
-  }
-  .publish-user-container {
-    width: 100%;
-    margin-top: 50px;
-  }
-  .publish-user-title {
-    background-color: #ddd;
-  }
-  .publish-user-title h1 {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0;
-  }
-  .publish-user-block {
-    padding: 20px;
-    border: 1px solid #ddd;
-  }
-  .publish-user-innerblock {
-    display: flex;
-    box-shadow: 3px 3px 6px -2px #555,
-      3px 3px 8px rgba(255, 255, 255, 0.8) inset;
   }
   /* フッター */
   .footer_nav {
