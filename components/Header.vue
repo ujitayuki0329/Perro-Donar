@@ -21,10 +21,29 @@
             <div class="header-nav-item">
               <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
             </div>
-            <div class="header-nav-item">
+            <div @click="click_dropdown" class="header-nav-item">
               <img src="https://placehold.jp/50x50.png" class="header-avatar" />
             </div>
           </nav>
+        </div>
+        <div v-show="show" class="menu-content">
+          <ul>
+            <li>
+                <a href="/user_page/profile/profile/"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
+            </li>
+            <li>
+                <a href="/user_page/favorite/"><i class="fas fa-heart" style="font-size:12px;"></i>お気に入り</a>
+            </li>
+            <li>
+                <a href="/user_page/sponser/"><i class="fas fa-hands-helping" style="font-size:12px;"></i>スポンサー一覧</a>
+            </li>
+            <li>
+                <a href="/user_page/my_dog/"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
+            </li>
+          </ul>
         </div>
       </header>
       <nav id="nav-bar">
@@ -79,6 +98,7 @@ export default {
   data() {
     return {
       contact_modal: false,
+      show: false,
     }
   },
   methods: {
@@ -87,6 +107,9 @@ export default {
     },
     close_contact_modal() {
       this.contact_modal = false
+    },
+    click_dropdown() {
+      this.show = !this.show
     },
     signInWithGoogle(){
       const auth = getAuth()
@@ -210,6 +233,49 @@ export default {
   opacity: 0.54;
 }
 
+.menu-content {
+    width: 50%;
+    height: 100%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #ff7d6e;
+    
+}
+/* .menu-content ul {
+} */
+.menu-content ul li {
+    border-bottom: solid 1px gray;
+    list-style: none;
+}
+
+.menu-content ul li:hover{
+  background-color: #f8a79e;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    box-sizing: border-box;
+    color:gray;
+    text-decoration: none;
+    padding: 20px;
+    /* position: relative; */
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px gray;
+    border-right: solid 2px gray;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 40px;
+}
+
 @media screen and (max-width: 480px) {
   .form2 {
     display: none;
@@ -220,6 +286,20 @@ export default {
   .header-nav-item{
     margin-left: 0;
   }
+  .menu-content ul li a{
+    padding: 10px;
+  }
+  .menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px gray;
+    border-right: solid 2px gray;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 22px;
+}
 }
 </style>
 

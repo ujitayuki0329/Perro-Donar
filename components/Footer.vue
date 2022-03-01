@@ -65,9 +65,28 @@
           <li><a href="/user_page/search/"><i class="fas fa-search"></i></a>検索</li>
           <li><a href="/user_page/publishe/"><i class="fas fa-plus"></i></a>投稿</li>
           <li><a href="/user_page/favorite/"><i class="fas fa-heart icon"></i></a>お気に入り</li>
-          <li><a href="#"><i class="fas fa-bars"></i></a>メニュー</li>
+          <li><a href="#" @click="click_dropdown"><i class="fas fa-bars"></i></a>メニュー</li>
         </ul>
       </div>
+      <div v-show="show" class="menu-content">
+          <ul>
+            <li>
+                <a href="/user_page/profile/profile/"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
+            </li>
+            <li>
+                <a href="/user_page/favorite/"><i class="fas fa-heart" style="font-size:12px;"></i>お気に入り</a>
+            </li>
+            <li>
+                <a href="/user_page/sponser/"><i class="fas fa-hands-helping" style="font-size:12px;"></i>スポンサー一覧</a>
+            </li>
+            <li>
+                <a href="/user_page/my_dog/"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
+            </li>
+          </ul>
+        </div>
       <Modal v-show="contact_modal">
         <div class="form-wrapper">
           <div class="modal-button">
@@ -105,6 +124,7 @@ export default {
   data() {
     return {
       contact_modal: false,
+      show:false,
     }
   },
   methods: {
@@ -114,6 +134,9 @@ export default {
     close_contact_modal() {
       this.contact_modal = false
     },
+    click_dropdown() {
+      this.show = !this.show
+    }
   }
   
 }
