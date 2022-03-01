@@ -62,7 +62,7 @@
       </div>
 
       <div class="sp">
-        <a href="/user_page/dog_detail/dog_detail/">
+        <a href="/user_page/publishe/">
           <div class="mydog-list-block">
             <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
@@ -76,7 +76,7 @@
             </div>
           </div>
         </a>
-        <a href="/user_page/dog_detail/dog_detail/">
+        <a href="/user_page/publishe/">
           <div class="mydog-list-block">
             <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
@@ -90,7 +90,7 @@
             </div>
           </div>
         </a>
-        <a href="/user_page/dog_detail/dog_detail/">
+        <a href="/user_page/publishe/">
           <div class="mydog-list-block">
             <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
@@ -104,7 +104,7 @@
             </div>
           </div>
         </a>
-        <a href="/user_page/dog_detail/dog_detail/">
+        <a href="/user_page/publishe/">
           <div class="mydog-list-block">
             <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
@@ -118,7 +118,7 @@
             </div>
           </div>
         </a>
-        <a href="/user_page/dog_detail/dog_detail/">
+        <a href="/user_page/publishe/">
           <div class="mydog-list-block">
             <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">
@@ -132,7 +132,7 @@
             </div>
           </div>
         </a>
-        <a href="/user_page/dog_detail/dog_detail/">
+        <a href="/user_page/publishe/">
           <div class="mydog-list-block">
             <div class="mydog-block-img">
               <img src="~/assets/img/dog-img/ボストンテリア.png" alt="">

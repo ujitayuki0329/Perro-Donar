@@ -113,6 +113,7 @@
 
 <script>
 // import Modal from './Modal.vue'
+import '@/assets/css/style.css'
 import Modal from './Modal'
 
 
