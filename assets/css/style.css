@@ -1103,6 +1103,7 @@ a.btn-radius-solid:hover {
   text-align: center;
   font-size: 12px;
   background-color: #ddd;
+  border: 1px solid #ddd;
 }
 .loopSlide ul li img {
   display: block;
