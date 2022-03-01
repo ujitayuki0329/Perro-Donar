@@ -1074,6 +1074,63 @@ a.btn-radius-solid:hover {
   box-shadow: 3px 3px 6px -2px #555, 3px 3px 8px rgba(255, 255, 255, 0.8) inset;
 }
 
+.loopSlide {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+}
+.loopSlide ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+.loopSlide ul:first-child {
+  animation: slide1 60s -30s linear infinite;
+}
+.loopSlide ul:last-child {
+  animation: slide2 60s linear infinite;
+}
+.loopSlide ul li {
+  display: inline-block;
+  width: 100%;
+  min-width: 150px;
+  margin-right: 20px;
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+  background-color: #ddd;
+}
+.loopSlide ul li img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+.loopSlide:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
 /* フッター */
 h1 {
   text-align: center;

@@ -20,12 +20,11 @@
             <img class="carousel-img" src="~/assets/img/slide3.png" alt="スライド3">
           </slide> -->
         </carousel>
-        <!-- <Slider /> -->
         <!-- <Search /> -->
         <Contents />
         <About />
         <Protection />
-        <Advertisement />
+        <Slider />
         <Footer/>
         <Copylight/>
       </div>
