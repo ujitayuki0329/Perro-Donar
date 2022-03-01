@@ -69,24 +69,37 @@
         </ul>
       </div>
       <div v-show="show" class="menu-content">
-          <ul>
-            <li>
-                <a href="/user_page/profile/profile/"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
-            </li>
-            <li>
-                <a href="/user_page/favorite/"><i class="fas fa-heart" style="font-size:12px;"></i>お気に入り</a>
-            </li>
-            <li>
-                <a href="/user_page/sponser/"><i class="fas fa-hands-helping" style="font-size:12px;"></i>スポンサー一覧</a>
-            </li>
-            <li>
-                <a href="/user_page/my_dog/"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
-            </li>
-            <li>
-                <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
-            </li>
-          </ul>
+        <div class="menu-content-wrap">
+          <nav class="header-nav">
+            <div class="header-nav-item">
+              <a href="/auth/register/" class="header-button header-post">新規登録</a>
+            </div>
+            <div class="header-nav-item">
+              <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
+            </div>
+            <div class="header-nav-item">
+            <img src="https://placehold.jp/50x50.png" class="header-avatar" />
+          </div>
+          </nav>
         </div>
+        <ul>
+          <li>
+              <a href="/user_page/profile/profile/"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
+          </li>
+          <li>
+              <a href="/user_page/favorite/"><i class="fas fa-heart" style="font-size:12px;"></i>お気に入り</a>
+          </li>
+          <li>
+              <a href="/user_page/sponser/"><i class="fas fa-hands-helping" style="font-size:12px;"></i>スポンサー一覧</a>
+          </li>
+          <li>
+              <a href="/user_page/my_dog/"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
+          </li>
+          <li>
+              <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
+          </li>
+        </ul>
+      </div>
       <Modal v-show="contact_modal">
         <div class="form-wrapper">
           <div class="modal-button">

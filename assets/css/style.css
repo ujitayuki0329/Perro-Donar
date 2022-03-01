@@ -414,7 +414,13 @@ input:focus {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #ff7d6e;
+  background-color: white;
+}
+
+.menu-content-wrap {
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid gray;
+  background-color: #3e5770;
 }
 /* .menu-content ul {
 } */
@@ -424,7 +430,7 @@ input:focus {
 }
 
 .menu-content ul li:hover {
-  background-color: #f8a79e;
+  background-color: #ddd;
 }
 
 .menu-content ul li a {
@@ -446,7 +452,7 @@ input:focus {
   transform: rotate(45deg);
   position: absolute;
   right: 11px;
-  top: 40px;
+  top: 34px;
 }
 
 .navbar-nav .nav-item a {
@@ -1207,6 +1213,9 @@ textarea {
     position: absolute;
     right: 11px;
     top: 22px;
+  }
+  .menu-content ul {
+    padding: 10px 0px 0;
   }
 
   #nav-bar .nav-bar-title h1 {

@@ -27,6 +27,19 @@
           </nav>
         </div>
         <div v-show="show" class="menu-content">
+          <div class="menu-content-wrap">
+            <nav class="header-nav">
+              <div class="header-nav-item">
+                <a href="/auth/register/" class="header-button header-post">新規登録</a>
+              </div>
+              <div class="header-nav-item">
+                <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
+              </div>
+              <div class="header-nav-item">
+              <img src="https://placehold.jp/50x50.png" class="header-avatar" />
+            </div>
+            </nav>
+          </div>
           <ul>
             <li>
                 <a href="/user_page/profile/profile/"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
