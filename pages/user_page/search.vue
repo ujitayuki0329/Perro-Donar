@@ -11,7 +11,7 @@
             <h1>キーワード</h1>
           </div>
           <div class="freeword-box">
-            <input type="text" placeholder="キーワードを入力してください。">
+            <input type="text" placeholder="キーワードを入力してください。" class="form-control">
           </div>
           <div class="search-title">
             <h1>会員種別</h1>

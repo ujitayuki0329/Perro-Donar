@@ -37,10 +37,12 @@
               <div class="profile_edit_contents">
                 <p>自己紹介文</p>
                 <textarea name="introduce" class="m-form-textarea" placeholder="自己紹介文"></textarea>
-                <p>Twitterアカウント</p>
-                <h5>https://twitter.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="twitterアカウント" value=""></h5>
-                <h5>https://www.youtube.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="youtubeチャンネル" value=""></h5>
-                
+                <div class="sns-form">
+                  <p>Twitterアカウント</p>
+                  <h5>https://twitter.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="twitterアカウント" value=""></h5>
+                  <p>YouTubeアカウント</p>
+                  <h5>https://youtube.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="twitterアカウント" value=""></h5>
+                </div>
               </div>
             </div>
             <div class="profile_edit_header">

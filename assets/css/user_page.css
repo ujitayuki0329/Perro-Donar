@@ -741,6 +741,14 @@ header {
   margin: 100px;
 }
 
+.sns-form {
+  margin-top: 10px;
+}
+
+.sns-form p {
+  margin: 0;
+}
+
 .bank-information-title p {
   font-weight: bold;
   font-size: 12px;

@@ -6,6 +6,10 @@
   display: none !important;
 }
 
+.form-control {
+  font-size: 12px;
+}
+
 .modal__overlay {
   display: flex;
   align-items: center;
@@ -62,6 +66,7 @@
 .google-sign-contents img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 #page_title h1 .fas {
@@ -853,7 +858,7 @@ a.btn-radius-solid:hover {
 }
 
 .profile_upload {
-  width: 50%;
+  width: 30%;
   height: 250px;
   background-color: white;
 }
@@ -889,6 +894,7 @@ a.btn-radius-solid:hover {
   font-size: 10px;
   background-color: #ff7d6e;
   padding: 6px;
+  margin-bottom: 10px;
 }
 
 .pay-form-group p {
@@ -1393,6 +1399,7 @@ textarea {
     font-size: 10px;
     background-color: #ff7d6e;
     padding: 6px;
+    margin-bottom: 10px;
   }
   .serch-container {
     width: 100%;
@@ -1496,6 +1503,11 @@ textarea {
   .card-group > .card + .card {
     margin-left: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .profile_upload {
+    width: 50%;
+    height: auto;
+    background-color: white;
   }
   /* フッター */
   .footer_nav {
