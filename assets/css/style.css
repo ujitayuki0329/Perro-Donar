@@ -681,6 +681,10 @@ a.btn--orange:hover {
   border-radius: 20px;
 }
 
+.your-sponser p {
+  margin: 0;
+}
+
 /* タイトル */
 .slider_ttl {
   color: #333;
@@ -1130,6 +1134,13 @@ a.btn-radius-solid:hover {
   to {
     transform: translateX(-200%);
   }
+}
+
+.withdrawal {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  padding: 5px;
 }
 
 /* フッター */

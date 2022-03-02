@@ -26,6 +26,8 @@
         <div class="content">
           <h1>キャンチョメ</h1>
           <p>一般会員</p>
+          <a href="https://twitter.com/Perro_Donar"><p><i class="fab fa-twitter" style="padding-right:5px;"></i>https://twitter.com/Perro_Donar</p></a>
+          <a href="https://www.youtube.com/"><p><i class="fab fa-youtube" style="padding-right:5px;"></i>https://www.youtube.com/</p></a>
           <p>自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。自己紹介文が入ります。</p>
           <div class="data">
             <ul>

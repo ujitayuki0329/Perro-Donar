@@ -19,15 +19,92 @@
             </div>
             <div class="form-group">
               <p>年齢</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="2歳" value="">
+              <div class="cp_ipselect cp_sl01">
+                <select required class="eria">
+                  <option value="" hidden>指定なし</option>
+                  <option value="0歳未満">0歳未満</option>
+                  <option value="1歳">1歳</option>
+                  <option value="2歳">2歳</option>
+                  <option value="3歳">3歳</option>
+                  <option value="4歳">4歳</option>
+                  <option value="5歳">5歳</option>
+                  <option value="6歳">6歳</option>
+                  <option value="7歳">7歳</option>
+                  <option value="8歳">8歳</option>
+                  <option value="9歳">9歳</option>
+                  <option value="10歳">10歳</option>
+                  <option value="11歳">11歳</option>
+                  <option value="12歳">12歳</option>
+                  <option value="13歳">13歳</option>
+                  <option value="14歳">14歳</option>
+                  <option value="15歳">15歳</option>
+                  <option value="16歳">16歳</option>
+                  <option value="17歳">17歳</option>
+                  <option value="18歳">18歳</option>
+                  <option value="19歳">19歳</option>
+                  <option value="20歳">20歳</option>
+                  <option value="20歳以上">20歳以上</option>
+                </select>
+              </div>
             </div>
             <div class="form-group">
               <p>出身地</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="埼玉県" value="">
+              <div class="cp_ipselect cp_sl01">
+                <select required class="eria">
+                  <option value="" hidden>指定なし</option>
+                  <option value="1">北海道</option>
+                  <option value="2">青森県</option>
+                  <option value="3">岩手県</option>
+                  <option value="4">宮城県</option>
+                  <option value="5">秋田県</option>
+                  <option value="6">山形県</option>
+                  <option value="7">福島県</option>
+                  <option value="8">茨城県</option>
+                  <option value="9">栃木県</option>
+                  <option value="10">群馬県</option>
+                  <option value="11">埼玉県</option>
+                  <option value="12">千葉県</option>
+                  <option value="13">東京都</option>
+                  <option value="14">神奈川県</option>
+                  <option value="15">新潟県</option>
+                  <option value="16">富山県</option>
+                  <option value="17">石川県</option>
+                  <option value="18">福井県</option>
+                  <option value="19">山梨県</option>
+                  <option value="20">長野県</option>
+                  <option value="21">岐阜県</option>
+                  <option value="22">静岡県</option>
+                  <option value="23">愛知県</option>
+                  <option value="24">三重県</option>
+                  <option value="25">滋賀県</option>
+                  <option value="26">京都府</option>
+                  <option value="27">大阪府</option>
+                  <option value="28">兵庫県</option>
+                  <option value="29">奈良県</option>
+                  <option value="30">和歌山県</option>
+                  <option value="31">鳥取県</option>
+                  <option value="32">島根県</option>
+                  <option value="33">岡山県</option>
+                  <option value="34">広島県</option>
+                  <option value="35">山口県</option>
+                  <option value="36">徳島県</option>
+                  <option value="37">香川県</option>
+                  <option value="38">愛媛県</option>
+                  <option value="39">高知県</option>
+                  <option value="40">福岡県</option>
+                  <option value="41">佐賀県</option>
+                  <option value="42">長崎県</option>
+                  <option value="43">熊本県</option>
+                  <option value="44">大分県</option>
+                  <option value="45">宮崎県</option>
+                  <option value="46">鹿児島県</option>
+                  <option value="47">沖縄県</option>
+                </select>
+              </div>
             </div>
             <div class="form-group">
               <p>生年月日</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="2022/3/29" value="">
+              <input type="date" id="dog-birthday" name="birthday" class="form-control border-input" value="">
             </div>
             <div class="form-group">
               <p>性別</p>
