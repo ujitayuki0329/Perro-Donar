@@ -89,9 +89,6 @@
                         <img src="~/assets/img/avater.png">
                         <div class="your-sponser">
                           <h3>user_name</h3>
-                          <p>一般会員</p>
-                          <p>埼玉県</p>
-                          <p>掲載数:5件</p>
                         </div>
                       </a>
                     </li>
@@ -100,9 +97,6 @@
                         <img src="~/assets/img/avater.png">
                         <div class="your-sponser">
                           <h3>user_name</h3>
-                          <p>一般会員</p>
-                          <p>埼玉県</p>
-                          <p>掲載数:5件</p>
                         </div>
                       </a>
                     </li>
@@ -111,9 +105,6 @@
                         <img src="~/assets/img/avater.png">
                         <div class="your-sponser">
                           <h3>user_name</h3>
-                          <p>一般会員</p>
-                          <p>埼玉県</p>
-                          <p>掲載数:5件</p>
                         </div>
                       </a>
                     </li>
@@ -122,9 +113,6 @@
                         <img src="~/assets/img/avater.png">
                         <div class="your-sponser">
                           <h3>user_name</h3>
-                          <p>一般会員</p>
-                          <p>埼玉県</p>
-                          <p>掲載数:5件</p>
                         </div>
                       </a>
                     </li>
@@ -133,9 +121,6 @@
                         <img src="~/assets/img/avater.png">
                         <div class="your-sponser">
                           <h3>user_name</h3>
-                          <p>一般会員</p>
-                          <p>埼玉県</p>
-                          <p>掲載数:5件</p>
                         </div>
                       </a>
                     </li>
@@ -144,9 +129,6 @@
                         <img src="~/assets/img/avater.png">
                         <div class="your-sponser">
                           <h3>user_name</h3>
-                          <p>一般会員</p>
-                          <p>埼玉県</p>
-                          <p>掲載数:5件</p>
                         </div>
                       </a>
                     </li>

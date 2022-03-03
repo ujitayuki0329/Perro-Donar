@@ -1086,15 +1086,27 @@ a.btn-radius-solid:hover {
   justify-content: center;
   align-items: center;
 }
-.mydog-block-img {
+.publish-block-img {
   width: 100px;
   height: 100px;
 }
-.mydog-block-img img {
+.publish-block-img img {
   width: 100%;
 }
-.mydog-block-contents {
+.publish-block-contents {
+  display: block;
   width: 150px;
+  height: 120px;
+  padding: 20px;
+}
+.publish-block-contents p {
+  margin: 0;
+  font-size: 10px;
+}
+.publish-block-name {
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 10px;
 }
 
 .loopSlide {
@@ -1174,13 +1186,13 @@ h1 {
   color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
   border: 3px solid #ddd;
   transition: all 0.3s;
-  padding: 13px;
+  padding: 5px;
   margin-bottom: 15px;
   width: 100%;
   box-sizing: border-box;

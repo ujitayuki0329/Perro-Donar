@@ -122,11 +122,11 @@
               <div class="publish-user-block">
                 <a href="/user_page/profile/profile/">
                   <div class="publish-user-innerblock">
-                    <div class="mydog-block-img">
+                    <div class="publish-block-img">
                       <img src="~/assets/img/avater.png" alt="">
                     </div>
-                    <div class="mydog-block-contents">
-                      <p class="mydog-block-name">ユーザーネームさん</p>
+                    <div class="publish-block-contents">
+                      <p class="publish-block-name">ユーザーネームさん</p>
                       <p>一般会員</p>
                       <p>埼玉県</p>
                       <p>掲載数:5件</p>
