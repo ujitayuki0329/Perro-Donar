@@ -41,7 +41,7 @@
                   <p>Twitterアカウント</p>
                   <h5>https://twitter.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="twitterアカウント" value=""></h5>
                   <p>YouTubeアカウント</p>
-                  <h5>https://youtube.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="twitterアカウント" value=""></h5>
+                  <h5>https://youtube.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="youtubeアカウント" value=""></h5>
                 </div>
               </div>
             </div>

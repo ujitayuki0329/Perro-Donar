@@ -132,13 +132,13 @@ h2 {
 }
 
 ::placeholder {
-  opacity: 0.3;
-  padding: 10px;
+  opacity: 0.6;
+  padding: 5px;
 }
 
 .form-control::placeholder {
-  font-size: 12px;
-  opacity: 0.5;
+  font-size: 16px;
+  opacity: 0.6;
 }
 
 .m-form-textarea {
@@ -155,7 +155,7 @@ h2 {
 
 .total-place {
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   line-height: 10px;
 }

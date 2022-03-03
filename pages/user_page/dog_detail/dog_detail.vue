@@ -119,7 +119,23 @@
               <div class="publish-user-title">
                 <h1>掲載者情報</h1>
               </div>
-              <a href="/user_page/profile/profile/">
+              <div class="publish-user-block">
+                <a href="/user_page/profile/profile/">
+                  <div class="publish-user-innerblock">
+                    <div class="mydog-block-img">
+                      <img src="~/assets/img/avater.png" alt="">
+                    </div>
+                    <div class="mydog-block-contents">
+                      <p class="mydog-block-name">ユーザーネームさん</p>
+                      <p>一般会員</p>
+                      <p>埼玉県</p>
+                      <p>掲載数:5件</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <a href="/user_page/profile/profile/">
                 <div class="publish-user-block">
                   <div class="publish-user-innerblock">
                     <div class="mydog-block-img">
@@ -133,7 +149,7 @@
                     </div>
                   </div>
                 </div>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -191,3 +207,41 @@ export default{
 }
 </script>
 
+
+<style>
+.publish-user-container {
+  width: 100%;
+  margin-top: 50px;
+}
+.publish-user-title {
+  background-color: #ddd;
+}
+.publish-user-title h1 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+.publish-user-block {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #ddd;
+}
+.publish-user-innerblock {
+  display: flex;
+  text-align:left;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.mydog-block-img{
+  width: 100px;
+  height: 100px;
+}
+.mydog-block-img img {
+  width: 100%;
+}
+.mydog-block-contents{
+  width: 150px;
+}
+</style>
