@@ -1061,7 +1061,7 @@ a.btn-radius-solid:hover {
   font-size: 16px;
 }
 
-/* .publish-user-container {
+.publish-user-container {
   width: 100%;
   margin-top: 50px;
 }
@@ -1075,17 +1075,27 @@ a.btn-radius-solid:hover {
 }
 .publish-user-block {
   width: 100%;
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #ddd;
 }
 .publish-user-innerblock {
   display: flex;
-  text-align: center;
-  width: 50%;
+  text-align: left;
+  width: 80%;
   margin: 0 auto;
-  border: 1px solid #ddd;
-  box-shadow: 3px 3px 6px -2px #555, 3px 3px 8px rgba(255, 255, 255, 0.8) inset;
-} */
+  justify-content: center;
+  align-items: center;
+}
+.mydog-block-img {
+  width: 100px;
+  height: 100px;
+}
+.mydog-block-img img {
+  width: 100%;
+}
+.mydog-block-contents {
+  width: 150px;
+}
 
 .loopSlide {
   position: relative;
