@@ -53,8 +53,8 @@
             <li>
                 <a href="/user_page/my_dog/"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
             </li>
-            <li>
-                <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
+            <li @click="logout"> 
+                <a href="/"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
             </li>
           </ul>
         </div>
@@ -76,8 +76,8 @@
             <form>      
               <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" v-model="email">
               <input name="password" type="text" class="feedback-input" placeholder="パスワード" v-model="password">   
-              <div class="check-button">
-                <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="Login">ログイン</a>
+              <div class="check-button" @click="Login">
+                <a href="/" class="btn btn-radius-solid" style="font-weight: bold;">ログイン</a>
               </div>
             </form>
           </div>
@@ -101,7 +101,7 @@
 // import Modal from './Modal.vue'
 import '@/assets/css/style.css'
 import Modal from './Modal'
-import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword} from "firebase/auth"
+import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword,signOut} from "firebase/auth"
 
 
 export default {
@@ -144,6 +144,15 @@ export default {
       .catch((error) => {
         alert('入力情報が誤っています')
       })
+    },
+    logout(){
+      const auth = getAuth();
+      signOut(auth).then(() => {
+        alert('ログアウト成功')
+      }).catch((error) => {
+        alert('ログアウトできませんでした')
+      })
+
     }
   },
 }

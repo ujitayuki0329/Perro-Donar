@@ -95,7 +95,7 @@
           <li>
               <a href="/user_page/my_dog/"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
           </li>
-          <li>
+          <li @click="logout">
               <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
           </li>
         </ul>
@@ -128,7 +128,7 @@
 // import Modal from './Modal.vue'
 import '@/assets/css/style.css'
 import Modal from './Modal'
-
+import { getAuth, signOut } from "firebase/auth";
 
 export default {
   components: {
@@ -150,6 +150,15 @@ export default {
     },
     click_dropdown() {
       this.show = !this.show
+    },
+    logout(){
+      const auth = getAuth();
+      signOut(auth).then(() => {
+        alert('ログアウト成功')
+      }).catch((error) => {
+        alert('ログアウトできませんでした')
+      })
+
     }
   }
   

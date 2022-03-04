@@ -8,7 +8,7 @@
         <div class="Form">
           <div class="Form-Item">
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>ユーザーネーム</p>
-            <input type="text" class="Form-Item-Input" placeholder="例）ぺろドナで表示される名前" v-model="name">
+            <input type="text" class="Form-Item-Input" placeholder="例）ぺろドナで表示される名前">
           </div>
           <div class="Form-Item">
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
@@ -23,7 +23,7 @@
             <input type="email" class="Form-Item-Input" placeholder="例）example1234">
           </div>
           <div class="register_btn">
-            <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="register">登録する</a>  
+            <a href="/" class="btn btn-radius-solid" style="font-weight: bold;" @click="register">登録する</a>  
           </div>
           <div class="register_footer">
               <p>すでに新規会員登録をお済ませの方は <a href="#" @click="open_contact_modal">こちら</a></p>
