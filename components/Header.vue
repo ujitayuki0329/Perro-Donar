@@ -111,8 +111,8 @@ export default {
   
   data() {
     return {
-      // email: "",
-      // password: "",
+      email: "",
+      password: "",
       contact_modal: false,
       show: false,
     }
@@ -139,10 +139,10 @@ export default {
     Login(){
       const auth = getAuth()
       signInWithEmailAndPassword(auth,this.email,this.password).then((user) => {
-        console.log('ログイン成功')
+        alert('ログイン成功')
       })
       .catch((error) => {
-        console.log(error)
+        alert('入力情報が誤っています')
       })
     }
   },
