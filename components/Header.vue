@@ -74,10 +74,10 @@
           <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>ログイン</h1>
           <div class="form-wrap">
             <form>      
-              <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" />
-              <input name="password" type="text" class="feedback-input" placeholder="パスワード" />   
+              <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" v-model="email">
+              <input name="password" type="text" class="feedback-input" placeholder="パスワード" v-model="password">   
               <div class="check-button">
-                <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="open_contact_modal">ログイン</a>
+                <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="Login">ログイン</a>
               </div>
             </form>
           </div>
@@ -101,7 +101,7 @@
 // import Modal from './Modal.vue'
 import '@/assets/css/style.css'
 import Modal from './Modal'
-import {getAuth, signInWithPopup, GoogleAuthProvider} from "firebase/auth"
+import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword} from "firebase/auth"
 
 
 export default {
@@ -111,6 +111,8 @@ export default {
   
   data() {
     return {
+      // email: "",
+      // password: "",
       contact_modal: false,
       show: false,
     }
@@ -133,16 +135,17 @@ export default {
       }).catch((error) => {
         console.log(error)
       })
+    },
+    Login(){
+      const auth = getAuth()
+      signInWithEmailAndPassword(auth,this.email,this.password).then((user) => {
+        console.log('ログイン成功')
+      })
+      .catch((error) => {
+        console.log(error)
+      })
     }
   },
-
-  // mounted() {
-  //   $(function(){
-  //     $(".menu-btn").click(function(){
-  //       $(".sp-menu").slideToggle(200);
-  //     });
-  //   });
-  // } 
 }
 </script>
 
