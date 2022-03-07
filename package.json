@@ -25,7 +25,8 @@
     "vue-awesome-swiper": "^4.1.1",
     "vue-carousel": "^0.18.0",
     "vue-infinite-loading": "^2.4.5",
-    "vue-upload-drop-images": "^1.0.7"
+    "vue-upload-drop-images": "^1.0.7",
+    "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "sass-loader": "^7.3.1"
