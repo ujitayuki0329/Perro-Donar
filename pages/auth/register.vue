@@ -8,7 +8,7 @@
         <div class="Form">
           <div class="Form-Item">
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>ユーザーネーム</p>
-            <input type="text" class="Form-Item-Input" placeholder="例）ぺろドナで表示される名前">
+            <input type="text" class="Form-Item-Input" placeholder="例）ぺろドナで表示される名前" v-model="name">
           </div>
           <div class="Form-Item">
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
@@ -23,7 +23,7 @@
             <input type="email" class="Form-Item-Input" placeholder="例）example1234">
           </div>
           <div class="register_btn">
-            <a href="/" class="btn btn-radius-solid" style="font-weight: bold;" @click="register">登録する</a>  
+            <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="register">登録する</a>  
           </div>
           <div class="register_footer">
               <p>すでに新規会員登録をお済ませの方は <a href="#" @click="open_contact_modal">こちら</a></p>
@@ -69,10 +69,15 @@ export default {
   components: {
     Modal
   },
+  computed: {
+    user () {
+      return this.$store.getters['user']
+    }
+  },
   
   data() {
     return {
-      // name:'',
+      name:'',
       email: '',
       password: '',
       contact_modal: false,
@@ -85,19 +90,22 @@ export default {
     close_contact_modal() {
       this.contact_modal = false
     },
-    register() {
-      const auth = getAuth();
-      createUserWithEmailAndPassword(auth , this.email , this.password )
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log('登録失敗')
-      })
+    register () {
+      this.$store.dispatch('register' , {name: this.name, email: this.email, password: this.password})
     }
+    // register() {
+    //   const auth = getAuth();
+    //   createUserWithEmailAndPassword(auth , this.email , this.password )
+    //   .then((userCredential) => {
+    //     const user = userCredential.user;
+    //     console.log(user);
+    //   })
+    //   .catch((error) => {
+    //     const errorCode = error.code;
+    //     const errorMessage = error.message;
+    //     console.log('登録失敗')
+    //   })
+    // }
   },
 }
 </script>
