@@ -15,13 +15,13 @@
                 <button class="form2-button"><i class="fa fa-search"></i></button>
               </form>
             </div>
-            <div class="header-nav-item">
+            <div v-if="this.$store.getters['user'].login == false" class="header-nav-item">
               <a href="/auth/register/" class="header-button header-post">新規登録</a>
             </div>
-            <div class="header-nav-item">
+            <div v-if="this.$store.getters['user'].login == false" class="header-nav-item">
               <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
             </div>
-            <div @click="click_dropdown" class="header-nav-item">
+            <div v-if="this.$store.getters['user'].login == true" @click="click_dropdown" class="header-nav-item">
               <img src="https://placehold.jp/50x50.png" class="header-avatar" />
             </div>
           </nav>
@@ -54,7 +54,7 @@
                 <a href="/user_page/my_dog/"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
             </li>
             <li @click="logout"> 
-                <a href="/"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
+                <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
             </li>
           </ul>
         </div>
@@ -76,8 +76,8 @@
             <form>      
               <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" v-model="email">
               <input name="password" type="text" class="feedback-input" placeholder="パスワード" v-model="password">   
-              <div class="check-button" @click="Login">
-                <a href="/" class="btn btn-radius-solid" style="font-weight: bold;">ログイン</a>
+              <div class="check-button" @click="login">
+                <a href="#" class="btn btn-radius-solid" style="font-weight: bold;">ログイン</a>
               </div>
             </form>
           </div>
@@ -108,7 +108,11 @@ export default {
   components: {
     Modal
   },
-  
+  computed: {
+    user () {
+      return this.$store.getters['user']
+    },
+  },
   data() {
     return {
       email: "",
@@ -136,24 +140,12 @@ export default {
         console.log(error)
       })
     },
-    Login(){
-      const auth = getAuth()
-      signInWithEmailAndPassword(auth,this.email,this.password).then((user) => {
-        alert('ログイン成功')
-      })
-      .catch((error) => {
-        alert('入力情報が誤っています')
-      })
+    login (email, password) {
+      this.$store.dispatch('login', {email: this.email, password: this.password})
     },
-    logout(){
-      const auth = getAuth();
-      signOut(auth).then(() => {
-        alert('ログアウト成功')
-      }).catch((error) => {
-        alert('ログアウトできませんでした')
-      })
-
-    }
+    logout() {
+      this.$store.dispatch('logout')
+    },
   },
 }
 </script>
