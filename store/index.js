@@ -74,16 +74,16 @@ export const actions = {
     createUserWithEmailAndPassword(auth, payload.email, payload.password)
       .then((userCredential) => {
         const user = userCredential.user;
+        console.log(user)
         const db = getFirestore()
-        // console.log(user.user.uid)
         const docRef = addDoc(collection(db, 'users'), {
           id: user.user.uid,
-          name: payload.name,
-          email: payload.email,
+          name: this.name,
+          email: this.email,
+          password: this.password,
           created_at: firebase.firestore.FieldValue.serverTimestamp(),
           updated_at: firebase.firestore.FieldValue.serverTimestamp()
         })
-        console.log(docRef)
        .catch(function (error) {
           console.log('ユーザー')
           console.log({'code':error.code, 'message':error.message})

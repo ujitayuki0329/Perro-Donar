@@ -16,11 +16,11 @@
           </div>
           <div class="Form-Item">
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>パスワード</p>
-            <input type="email" class="Form-Item-Input" placeholder="例）example1234" v-model="password">
+            <input type="text" class="Form-Item-Input" placeholder="例）example1234" v-model="password">
           </div>
           <div class="Form-Item">
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>パスワード(確認)</p>
-            <input type="email" class="Form-Item-Input" placeholder="例）example1234">
+            <input type="text" class="Form-Item-Input" placeholder="例）example1234">
           </div>
           <div class="register_btn">
             <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="register">登録する</a>  
