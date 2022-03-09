@@ -134,7 +134,11 @@ export default {
   components: {
     Modal
   },
-  
+  computed: {
+    user () {
+      return this.$store.getters['user']
+    },
+  },
   data() {
     return {
       contact_modal: false,
@@ -151,15 +155,9 @@ export default {
     click_dropdown() {
       this.show = !this.show
     },
-    logout(){
-      const auth = getAuth();
-      signOut(auth).then(() => {
-        alert('ログアウト成功')
-      }).catch((error) => {
-        alert('ログアウトできませんでした')
-      })
-
-    }
+    logout() {
+      this.$store.dispatch('logout')
+    },
   }
   
 }
