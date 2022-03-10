@@ -1,6 +1,6 @@
 import {} from "@/plugins/firebase.js";
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { getFirestore, collection, addDoc, doc, setDoc } from 'firebase/firestore'
+import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
 export const state = () => ({
  user: {
@@ -81,6 +81,7 @@ export const actions = {
           name: payload.name,
           email: payload.email,
           password: payload.password,
+          timpstamp: serverTimestamp(),
         })
        .catch(function (error) {
           console.log('ユーザー')

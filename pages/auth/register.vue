@@ -41,9 +41,9 @@
           <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>ログイン</h1>
           <div class="form-wrap">
             <form>      
-              <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" />
-              <input name="password" type="text" class="feedback-input" placeholder="パスワード" />   
-              <div class="check-button">
+              <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" v-model="email">
+              <input name="password" type="text" class="feedback-input" placeholder="パスワード" v-model="password">   
+              <div class="check-button" @click="login">
                 <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="open_contact_modal">ログイン</a>
               </div>
             </form>
@@ -61,8 +61,6 @@
 <script>
 import '@/assets/css/style.css'
 import Modal from '~/components/Modal'
-import { getAuth , createUserWithEmailAndPassword } from "firebase/auth";
-// import Modal from './Modal.vue'
 
 
 export default {
@@ -90,22 +88,12 @@ export default {
     close_contact_modal() {
       this.contact_modal = false
     },
+    login (email, password) {
+      this.$store.dispatch('login', {email: this.email, password: this.password})
+    },
     register () {
       this.$store.dispatch('register' , {name: this.name, email: this.email, password: this.password})
     }
-    // register() {
-    //   const auth = getAuth();
-    //   createUserWithEmailAndPassword(auth , this.email , this.password )
-    //   .then((userCredential) => {
-    //     const user = userCredential.user;
-    //     console.log(user);
-    //   })
-    //   .catch((error) => {
-    //     const errorCode = error.code;
-    //     const errorMessage = error.message;
-    //     console.log('登録失敗')
-    //   })
-    // }
   },
 }
 </script>
