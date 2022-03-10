@@ -1,6 +1,7 @@
 import {} from "@/plugins/firebase.js";
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getFirestore, collection, addDoc, doc, setDoc } from 'firebase/firestore'
+import { data } from "jquery";
 
 export const state = () => ({
  user: {
@@ -74,15 +75,19 @@ export const actions = {
     createUserWithEmailAndPassword(auth, payload.email, payload.password)
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user)
+        // console.log(user)
+        dispatch('checkLogin')
+         setTimeout(() => {
+           let url = '/?id=' + user.user.uid
+           window.location.href = url
+        }, 1000)
         const db = getFirestore()
         const docRef = addDoc(collection(db, 'users'), {
-          id: user.user.uid,
-          name: this.name,
-          email: this.email,
-          password: this.password,
-          created_at: firebase.firestore.FieldValue.serverTimestamp(),
-          updated_at: firebase.firestore.FieldValue.serverTimestamp()
+          id: user.uid,
+          name: payload.name,
+          email: payload.email,
+          password: payload.password,
+          created_at: now()
         })
        .catch(function (error) {
           console.log('ユーザー')
