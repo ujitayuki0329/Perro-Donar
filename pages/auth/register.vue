@@ -22,8 +22,8 @@
             <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>パスワード(確認)</p>
             <input type="text" class="Form-Item-Input" placeholder="例）example1234">
           </div>
-          <div class="register_btn">
-            <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="register">登録する</a>  
+          <div class="register_btn" @click="register">
+            <a href="#" class="btn btn-radius-solid" style="font-weight: bold;">登録する</a>  
           </div>
           <div class="register_footer">
               <p>すでに新規会員登録をお済ませの方は <a href="#" @click="open_contact_modal">こちら</a></p>

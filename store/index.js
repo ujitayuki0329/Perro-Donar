@@ -87,7 +87,6 @@ export const actions = {
           name: payload.name,
           email: payload.email,
           password: payload.password,
-          created_at: now()
         })
        .catch(function (error) {
           console.log('ユーザー')
