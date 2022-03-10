@@ -1,7 +1,6 @@
 import {} from "@/plugins/firebase.js";
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getFirestore, collection, addDoc, doc, setDoc } from 'firebase/firestore'
-import { data } from "jquery";
 
 export const state = () => ({
  user: {
@@ -76,11 +75,6 @@ export const actions = {
       .then((userCredential) => {
         const user = userCredential.user;
         // console.log(user)
-        dispatch('checkLogin')
-         setTimeout(() => {
-           let url = '/?id=' + user.user.uid
-           window.location.href = url
-        }, 1000)
         const db = getFirestore()
         const docRef = addDoc(collection(db, 'users'), {
           id: user.uid,
@@ -92,13 +86,13 @@ export const actions = {
           console.log('ユーザー')
           console.log({'code':error.code, 'message':error.message})
         })
+        dispatch('checkLogin')
+  
+        setTimeout(() => {
+          let url = '/user_page/profile/basic_information/?id=' + user.uid
+          window.location.href = url
+        }, 1000)
       })
-      dispatch('checkLogin')
-
-      setTimeout(() => {
-        let url = '/user_page/profile/profile/?id=' + user.user.uid
-        window.location.href = url
-      }, 1000)
   },
   nuxtClientInit ({ commit, state, dispatch }, { req }) {
     createPersistedState()(this);

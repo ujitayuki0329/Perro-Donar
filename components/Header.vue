@@ -60,8 +60,11 @@
         </div>
       </header>
       <nav id="nav-bar">
-        <div class="nav-bar-title">
+        <div v-if="this.$store.getters['user'].login == false" class="nav-bar-title">
           <h1>わんちゃん好きと愛犬をつなぐプラットフォーム！まずは無料の会員登録から</h1>
+        </div>
+        <div v-if="this.$store.getters['user'].login == true" class="nav-bar-title">
+          <h1>user_nameさん ようこそPerro-Donarへ</h1>
         </div>
       </nav> 
       <Modal v-show="contact_modal">
