@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cliant-only>
+    <client-only>
       <div class="index_wrap">
         <Header/>
         <carousel
@@ -28,7 +28,7 @@
         <Footer/>
         <Copylight/>
       </div>
-    </cliant-only>
+    </client-only>
   </div>
 </template>
 

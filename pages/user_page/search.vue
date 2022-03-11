@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cliant-only>
+    <client-only>
       <Header />
       <div id="container"> 
         <div id="page_title">
@@ -153,7 +153,8 @@
         </div>
       </div>
       <Footer />
-    </cliant-only>
+      <Copylight />
+    </client-only>
   </div>
 </template>
 

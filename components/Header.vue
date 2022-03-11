@@ -1,6 +1,6 @@
 <template>
   <div>
-    <cliant-only>
+    <client-only>
       <header class="header-3">
         <div class="header-inner">
           <div class="logo">
@@ -95,7 +95,7 @@
           </div>
         </div>
       </Modal>
-    </cliant-only>
+    </client-only>
   </div>
 </template>
 
