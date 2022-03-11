@@ -1,6 +1,7 @@
 import {} from "@/plugins/firebase.js";
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore'
+import createPersistedState from "vuex-persistedstate"
 
 export const state = () => ({
  user: {

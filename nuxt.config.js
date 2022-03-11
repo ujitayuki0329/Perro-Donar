@@ -29,7 +29,8 @@ export default {
     { src: '~/plugins/vue-carousel', ssr: false },
     { src: '@/plugins/plugin',mode: 'client' },
     { src: '~/plugins/infiniteloading', ssr: false },
-    { src: '~/plugins/swiper', mode: 'client' }
+    { src: '~/plugins/swiper', mode: 'client' },
+    { src: '~/plugins/persistedstate.js', ssr: false}
   ],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
