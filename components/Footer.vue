@@ -75,7 +75,7 @@
               <a href="/auth/register/" class="header-button header-post">新規登録</a>
             </div>
             <div class="header-nav-item" v-if="this.$store.getters['user'].login == false">
-              <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
+              <a class="header-button header-login" @click="open_login_modal">ログイン</a>
             </div>
             <div class="header-nav-item" v-if="this.$store.getters['user'].login == true">
             <img src="https://placehold.jp/50x50.png" class="header-avatar" />
@@ -120,6 +120,34 @@
           </div>
         </div>
       </Modal>
+      <Modal v-show="login_modal">
+        <div class="form-wrapper">
+          <div class="modal-button">
+            <button type="button" class="close-button" data-dismiss="modal" aria-label="Close" @click="close_login_modal">
+                <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <h1><i class="fas fa-paw icon" style="color:#ff7d6e;"></i>ログイン</h1>
+          <div class="form-wrap">
+            <form>      
+              <input name="email" type="text" class="feedback-input" placeholder="メールアドレス" v-model="email">
+              <input name="password" type="text" class="feedback-input" placeholder="パスワード" v-model="password">   
+              <div class="check-button" @click="login">
+                <a href="#" class="btn btn-radius-solid" style="font-weight: bold;">ログイン</a>
+              </div>
+            </form>
+          </div>
+          <div class="login_footer">
+            <p>新規会員登録がお済みでない方は <a href="/auth/register">こちら</a></p>
+            <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
+          </div>
+          <!-- <div class="google-sign-wrap" @click="signInWithGoogle">
+            <div class="google-sign-contents">
+              <img src="~/assets/img/google-btn.png" alt="">
+            </div>
+          </div> -->
+        </div>
+      </Modal>
     </cliant-only>
   </div>
 </template>
@@ -142,6 +170,7 @@ export default {
   data() {
     return {
       contact_modal: false,
+      login_modal: false,
       show:false,
     }
   },
@@ -152,8 +181,17 @@ export default {
     close_contact_modal() {
       this.contact_modal = false
     },
+    open_login_modal() {
+      this.login_modal = true
+    },
+    close_login_modal() {
+      this.login_modal = false
+    },
     click_dropdown() {
       this.show = !this.show
+    },
+    login (email, password) {
+      this.$store.dispatch('login', {email: this.email, password: this.password})
     },
     logout() {
       this.$store.dispatch('logout')

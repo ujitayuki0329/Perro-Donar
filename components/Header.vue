@@ -19,7 +19,7 @@
               <a href="/auth/register/" class="header-button header-post">新規登録</a>
             </div>
             <div v-if="this.$store.getters['user'].login == false" class="header-nav-item">
-              <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
+              <a class="header-button header-login" @click="open_login_modal">ログイン</a>
             </div>
             <div v-if="this.$store.getters['user'].login == true" @click="click_dropdown" class="header-nav-item">
               <img src="https://placehold.jp/50x50.png" class="header-avatar" />
@@ -33,7 +33,7 @@
                 <a href="/auth/register/" class="header-button header-post">新規登録</a>
               </div>
               <div class="header-nav-item" v-if="this.$store.getters['user'].login == false">
-                <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
+                <a class="header-button header-login" @click="open_login_modal">ログイン</a>
               </div>
               <div class="header-nav-item" v-if="this.$store.getters['user'].login == true">
               <img src="https://placehold.jp/50x50.png" class="header-avatar" />
@@ -67,10 +67,10 @@
           <h1>user_nameさん ようこそPerro-Donarへ</h1>
         </div>
       </nav> 
-      <Modal v-show="contact_modal">
+      <Modal v-show="login_modal">
         <div class="form-wrapper">
           <div class="modal-button">
-            <button type="button" class="close-button" data-dismiss="modal" aria-label="Close" @click="close_contact_modal">
+            <button type="button" class="close-button" data-dismiss="modal" aria-label="Close" @click="close_login_modal">
                 <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -120,16 +120,16 @@ export default {
     return {
       email: "",
       password: "",
-      contact_modal: false,
+      login_modal: false,
       show: false,
     }
   },
   methods: {
-    open_contact_modal() {
-      this.contact_modal = true
+    open_login_modal() {
+      this.login_modal = true
     },
-    close_contact_modal() {
-      this.contact_modal = false
+    close_login_modal() {
+      this.login_modal = false
     },
     click_dropdown() {
       this.show = !this.show

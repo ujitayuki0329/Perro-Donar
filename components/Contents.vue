@@ -162,7 +162,7 @@
             </ul>
           <a href="/list/popular/" class="detail">もっと見る</a>
         </div>
-        <div>
+        <div v-if="this.$store.getters['user'].login == true">
           <h1 class="slider_ttl mt-5">お気に入り</h1>
               <ul class="card-horizontal-list text-center">
                 <li>
@@ -258,7 +258,7 @@
               </ul>  
           <a href="/user_page/favorite/" class="detail">もっと見る</a>
         </div>
-        <div>
+        <div v-if="this.$store.getters['user'].login == true">
           <h1 class="slider_ttl mt-5">スポンサー一覧</h1>
               <ul class="card-horizontal-list text-center">
                 <li>
