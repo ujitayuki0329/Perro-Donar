@@ -71,13 +71,13 @@
       <div v-show="show" class="menu-content">
         <div class="menu-content-wrap">
           <nav class="header-nav">
-            <div class="header-nav-item">
+            <div class="header-nav-item" v-if="this.$store.getters['user'].login == false">
               <a href="/auth/register/" class="header-button header-post">新規登録</a>
             </div>
-            <div class="header-nav-item">
+            <div class="header-nav-item" v-if="this.$store.getters['user'].login == false">
               <a class="header-button header-login" @click="open_contact_modal">ログイン</a>
             </div>
-            <div class="header-nav-item">
+            <div class="header-nav-item" v-if="this.$store.getters['user'].login == true">
             <img src="https://placehold.jp/50x50.png" class="header-avatar" />
           </div>
           </nav>
