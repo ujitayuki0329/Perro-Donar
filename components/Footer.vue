@@ -16,7 +16,18 @@
               </ul>
             </ul>
       
-            <ul class="col list-unstyled">
+            <ul class="col list-unstyled" v-if="this.$store.getters['user'].login == false">
+              <li class="footer-menu"><a href="#">MENU</a></li>
+              <ul class="list-unstyled">
+                <li @click="open_login_modal"><a href="#">愛犬を掲載する</a></li>
+                <li @click="open_login_modal"><a href="#">プロフィール</a></li>
+                <li @click="open_login_modal"><a href="#">お気に入り</a></li>
+                <li @click="open_login_modal"><a href="#">スポンサー一覧</a></li>
+                <li @click="open_login_modal"><a href="#">MY DOG一覧</a></li>
+                <!-- <li><a href="#">SUBMENU</a></li> -->
+              </ul>
+            </ul>
+            <ul class="col list-unstyled" v-if="this.$store.getters['user'].login == true">
               <li class="footer-menu"><a href="#">MENU</a></li>
               <ul class="list-unstyled">
                 <li><a href="/user_page/publishe/">愛犬を掲載する</a></li>
@@ -82,7 +93,24 @@
           </div>
           </nav>
         </div>
-        <ul>
+        <ul v-if="this.$store.getters['user'].login == false" >
+            <li v-if="this.$store.getters['user'].login == true">
+                <a href="#"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
+            </li>
+            <li @click="open_login_modal">
+                <a href="#"><i class="fas fa-heart" style="font-size:12px;"></i>お気に入り</a>
+            </li>
+            <li @click="open_login_modal">
+                <a href="#"><i class="fas fa-hands-helping" style="font-size:12px;"></i>スポンサー一覧</a>
+            </li>
+            <li @click="open_login_modal">
+                <a href="#"><i class="fas fa-paw" style="font-size:12px;"></i>MyDog一覧</a>
+            </li>
+            <li v-if="this.$store.getters['user'].login == true" @click="logout"> 
+                <a href="#"><i class="fas fa-sign-out-alt" style="font-size:12px;"></i>ログアウト</a>
+            </li>
+          </ul>
+        <ul v-if="this.$store.getters['user'].login == true">
           <li>
               <a href="/user_page/profile/profile/"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
           </li>

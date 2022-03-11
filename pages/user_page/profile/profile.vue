@@ -48,7 +48,7 @@
           <div class="follow" style="font-size:12px;">メッセージを送る</div>
         </div>
       </div>
-      <div v-if="this.$store.getters['user'].login == true" class="profile-edit-link">
+      <div class="profile-edit-link">
         <p>プロフィール編集は<a href="/user_page/profile/mypage">こちら</a>から</p>
       </div>  
     </div>

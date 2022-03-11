@@ -40,7 +40,7 @@
             </div>
             </nav>
           </div>
-          <ul>
+          <ul v-if="this.$store.getters['user'].login == true" >
             <li>
                 <a href="/user_page/profile/profile/"><i class="fas fa-user" style="font-size:12px;"></i>プロフィール</a>
             </li>
