@@ -40,7 +40,7 @@ export const actions = {
          console.log('成功！')
          dispatch('checkLogin')
          setTimeout(() => {
-           let url = '/?id=' + user.user.uid
+           let url = '/'
            window.location.href = url
          }, 1000)
        }).catch((error) => {
@@ -91,7 +91,7 @@ export const actions = {
         dispatch('checkLogin')
   
         setTimeout(() => {
-          let url = '/user_page/profile/basic_information/?id=' + user.uid
+          let url = '/user_page/profile/basic_information/'
           window.location.href = url
         }, 1000)
       })
