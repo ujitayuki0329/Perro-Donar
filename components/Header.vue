@@ -88,11 +88,11 @@
             <p>新規会員登録がお済みでない方は <a href="/auth/register">こちら</a></p>
             <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
           </div>
-          <div class="google-sign-wrap" @click="signInWithGoogle">
+          <!-- <div class="google-sign-wrap" @click="signInWithGoogle">
             <div class="google-sign-contents">
               <img src="~/assets/img/google-btn.png" alt="">
             </div>
-          </div>
+          </div> -->
         </div>
       </Modal>
     </client-only>
@@ -134,15 +134,15 @@ export default {
     click_dropdown() {
       this.show = !this.show
     },
-    signInWithGoogle(){
-      const auth = getAuth()
-      const provider = new GoogleAuthProvider();
-      signInWithPopup(auth, provider).then((result) => {
-        this.$router.push({path:'/user_page/profile/profile_edit/'})
-      }).catch((error) => {
-        console.log(error)
-      })
-    },
+    // signInWithGoogle(){
+    //   const auth = getAuth()
+    //   const provider = new GoogleAuthProvider();
+    //   signInWithPopup(auth, provider).then((result) => {
+    //     this.$router.push({path:'/user_page/profile/profile_edit/'})
+    //   }).catch((error) => {
+    //     console.log(error)
+    //   })
+    // },
     login (email, password) {
       this.$store.dispatch('login', {email: this.email, password: this.password})
     },

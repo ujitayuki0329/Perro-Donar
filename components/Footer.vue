@@ -70,7 +70,16 @@
           </div><!-- .row -->
         </div><!-- .container -->
       </div>
-      <div class="footer_nav">
+      <div class="footer_nav" v-if="this.$store.getters['user'].login == false">
+        <ul>
+          <li><a href="/"><i class="fas fa-home"></i></a>ホーム</li>
+          <li><a href="/user_page/search/"><i class="fas fa-search"></i></a>検索</li>
+          <li @click="open_login_modal"><a href="#"><i class="fas fa-plus"></i></a>投稿</li>
+          <li @click="open_login_modal"><a href="#"><i class="fas fa-heart icon"></i></a>お気に入り</li>
+          <li><a href="#" @click="click_dropdown"><i class="fas fa-bars"></i></a>メニュー</li>
+        </ul>
+      </div>
+      <div class="footer_nav" v-if="this.$store.getters['user'].login == true">
         <ul>
           <li><a href="/"><i class="fas fa-home"></i></a>ホーム</li>
           <li><a href="/user_page/search/"><i class="fas fa-search"></i></a>検索</li>
