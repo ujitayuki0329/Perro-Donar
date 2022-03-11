@@ -169,6 +169,8 @@ export default {
   },
   data() {
     return {
+      email: "",
+      password: "",
       contact_modal: false,
       login_modal: false,
       show:false,
