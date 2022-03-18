@@ -104,7 +104,7 @@
 // import Modal from './Modal.vue'
 import '@/assets/css/style.css'
 import Modal from './Modal'
-// import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword,signOut} from "firebase/auth"
+import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword,signOut} from "firebase/auth"
 import { doc, getDoc,  getFirestore, query, where, collection,onSnapshot,getDocs } from 'firebase/firestore'
 
 export default {
