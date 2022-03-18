@@ -105,7 +105,6 @@
 import '@/assets/css/style.css'
 import Modal from './Modal'
 // import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword,signOut} from "firebase/auth"
-import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc,  getFirestore, query, where, collection,onSnapshot,getDocs } from 'firebase/firestore'
 
 export default {
@@ -136,15 +135,17 @@ export default {
       const uid = user.uid;
       
       const db = getFirestore();
-      const docRef = doc(db, "users", "R6E0h11sGHNnNymNkVJW")
-      //  const docRef = query(collection(db, 'users'), where('uid', '==', `${user.uid}`))
-      // const docRef = query(collection(db, 'users'), where('uid', '==', `${user.id}` ))
-      
-      getDoc(docRef).then((snap) => {
-        const array = [];
-        console.log(snap.data());
-        array.push(snap.data().name)
-        this.user_name = array
+      const myInfo = firebase.firestore().collection('users').doc(user.uid).get();
+      const myTeam = myInfo.data().id;
+      // 同一のteamであるuserにクエリ発行
+      const datas = firebase.firestore().collection('users').where('uid', '==', myTeam);
+
+      getDocs(datas).then((snap) => {
+        console.log(snap.data())
+        // const array = [];
+        // console.log(snap.data());
+        // array.push(snap.data().name)
+        // this.user_name = array
       })
     }
 
