@@ -36,12 +36,12 @@
               <h3>1.プロフィール</h3>
               <div class="profile_edit_contents">
                 <p>自己紹介文</p>
-                <textarea name="introduce" class="m-form-textarea" placeholder="自己紹介文"></textarea>
+                <textarea name="introduce" class="m-form-textarea" placeholder="自己紹介文" v-model="introduce"></textarea>
                 <div class="sns-form">
                   <p>Twitterアカウント</p>
-                  <h5>https://twitter.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="twitterアカウント" value=""></h5>
+                  <h5>https://twitter.com/ <input type="text" class="twitter-form" placeholder="twitterアカウント" v-model="twitter_link"></h5>
                   <p>YouTubeアカウント</p>
-                  <h5>https://youtube.com/ <input type="text"  name="dog_breed" class="twitter-form" placeholder="youtubeアカウント" value=""></h5>
+                  <h5>https://youtube.com/ <input type="text" class="twitter-form" placeholder="youtubeアカウント" v-model="youtube_link"></h5>
                 </div>
               </div>
             </div>
@@ -83,8 +83,8 @@
             </div>
           </div>
           <div class="mt-2 basic_infomation_btn" >
-            <a href="/user_page/profile/profile">
-            <button type="button" class="btn btn-outline-dark">保存</button>
+            <a href="#">
+            <button type="button" class="btn btn-outline-dark" @click="profile_edit_btn">保存</button>
             </a>
             <a href="/">
             <button type="button" class="btn btn-outline-danger">キャンセル</button>
@@ -102,7 +102,36 @@
 <script>
 import '@/assets/css/style.css'
 import '@/assets/css/user_page.css'
+import { getFirestore, addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
-export default{}
+export default{
+  data: () => {
+    return {
+      introduce: "",
+      twitter_link: "",
+      youtube_link: "",
+    }
+  },
+
+  methods: {
+    profile_edit_btn () {
+      const db = getFirestore()
+      const docRef = addDoc(collection(db, 'profile_edit'), {
+        introduce: this.introduce,
+        twitter_link: this.twitter_link,
+        youtube_link: this.youtube_link,
+      })
+      .catch(function (error) {
+        console.log('掲載できませんでした。')
+        console.log({'code':error.code, 'message':error.message})
+      })
+
+      setTimeout(() => {
+        let url = '/user_page/profile/profile'
+        window.location.href = url
+      }, 1000)
+    }
+  }
+}
 </script>
 

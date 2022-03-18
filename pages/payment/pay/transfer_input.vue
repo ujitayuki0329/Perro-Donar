@@ -11,19 +11,19 @@
           <div class="mypage-wrap">
             <div class="pay-form-group">
               <p>振込可能額</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" readonly>
             </div>
             <div class="pay-form-group">
               <p>振込申請金額</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" v-model="transfer_application_amount">
             </div>
             <div class="pay-form-group">
               <p>振込手数料</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" v-model="transfer_fee">
             </div>
             <div class="pay-form-group">
               <p>振込金額</p>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" v-model="transfer_money">
             </div>
           </div>
           <div class="pay-form-group"> 
@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="check-button">
-            <a href="/payment/pay/complet" class="btn btn-radius-solid" style="font-weight: bold;">振込申請をする</a>
+            <a href="#" class="btn btn-radius-solid" style="font-weight: bold;" @click="transfer_input_btn">振込申請をする</a>
           </div>
         </div>
       </div>
@@ -81,6 +81,7 @@
 <script>
 import '@/assets/css/style.css'
 import '@/assets/css/payment.css'
+import { getFirestore, addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
 export default {
   components: {
@@ -89,6 +90,11 @@ export default {
   
   data() {
     return {
+
+      transfer_application_amount: "",
+      transfer_fee: "",
+      transfer_money: "",
+
       transfer_check_modal: false,
     }
   },
@@ -99,6 +105,23 @@ export default {
     close_contact_modal() {
       this.transfer_check_modal = false
     },
+    transfer_input_btn() {
+      const db = getFirestore()
+      const docRef = addDoc(collection(db, 'transfer_information'), {
+        transfer_application_amount: this.transfer_application_amount,
+        transfer_fee: this.transfer_fee,
+        transfer_money: this.transfer_money,
+      })
+      .catch(function (error) {
+        console.log('掲載できませんでした。')
+        console.log({'code':error.code, 'message':error.message})
+      })
+
+      setTimeout(() => {
+        let url = '/payment/pay/complet'
+        window.location.href = url
+      }, 1000)
+    }
   }
   
 }

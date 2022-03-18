@@ -171,7 +171,6 @@
 <script>
 import '@/assets/css/style.css'
 import '@/assets/css/user_page.css'
-import firebase from'@/plugins/firebase'
 import { getFirestore, addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
 export default{

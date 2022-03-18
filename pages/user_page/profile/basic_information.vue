@@ -37,27 +37,27 @@
             </div>
             <div class="profile-wrap-item">
               <h3>ユーザーネーム</h3>
-              <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="ujita yuki" value="">
+              <input type="text" id="dog_name-field"  class="form-control border-input" placeholder="ujita yuki" readonly>
             </div>
             <div class="profile-wrap-item">
               <h3>メールアドレス</h3>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="test@test.com" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" placeholder="test@test.com" readonly>
             </div>
             <div class="profile-wrap-item">
               <h3>パスワード</h3>
-              <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="test1234" value="">
+              <input type="text" id="dog_name-field"  class="form-control border-input" placeholder="test1234" readonly>
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>お名前</h3>
-              <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="氏田 裕樹" value="">
+              <input type="text" id="dog_name-field"  class="form-control border-input" placeholder="氏田 裕樹" v-model="full_name">
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>電話番号</h3>
-              <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="09012345678" value="">
+              <input type="text" id="dog_name-field"  class="form-control border-input" placeholder="09012345678" v-model="tell_phone">
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>住所</h3>
-              <input type="text" id="dog_name-field" name="dog_name" class="form-control border-input" placeholder="埼玉県さいたま市1-1-1" value="">
+              <input type="text" id="dog_name-field"  class="form-control border-input" placeholder="埼玉県さいたま市1-1-1" v-model="address">
             </div>
           </div>
           <div class="border"></div>
@@ -68,29 +68,29 @@
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>銀行名</h3>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="三井住友銀行" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" placeholder="三井住友銀行" v-model="bank_name"> 
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>支店名</h3>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="東京支店" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" placeholder="東京支店" v-model="branch_name">
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>口座番号(7桁)</h3>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="1234567" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" placeholder="1234567" v-model="account_number">
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>口座種別</h3>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="普通" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" placeholder="普通" v-model="account_type">
             </div>
             <div class="profile-wrap-item">
               <h3><span>必須</span>口座名義カナ(全角)</h3>
-              <input type="text" id="dog_age-field" name="dog_age" class="form-control border-input" placeholder="ウジタ ユウキ" value="">
+              <input type="text" id="dog_age-field" class="form-control border-input" placeholder="ウジタ ユウキ" v-model="account_name">
             </div>
             <br>
         
         <div class="mt-2 basic_infomation_btn" >
-          <a href="/user_page/profile/profile">
-          <button type="button" class="btn btn-outline-dark">保存</button>
+          <a href="#">
+          <button type="button" class="btn btn-outline-dark" @click="basic_information_btn">保存</button>
           </a>
           <a href="/">
           <button type="button" class="btn btn-outline-danger">キャンセル</button>
@@ -109,6 +109,47 @@
 <script>
 import '@/assets/css/style.css'
 import '@/assets/css/user_page.css'
+import { getFirestore, addDoc, collection, serverTimestamp } from 'firebase/firestore'
 
-export default{}
+export default{
+  data: () => {
+    return {
+
+      full_name: "",
+      tell_phone: "",
+      address: "",
+      bank_name: "",
+      branch_name: "",
+      account_number: "",
+      account_type: "",
+      account_name: "",
+
+    }
+
+  },methods: {
+    basic_information_btn () {
+      const db = getFirestore()
+      const docRef = addDoc(collection(db, 'basic_information'), {
+        full_name: this.full_name,
+        tell_phone: this.tell_phone,
+        address: this.address,
+        bank_name: this.bank_name,
+        branch_name: this.branch_name,
+        account_number: this.account_number,
+        account_type: this.account_type,
+        account_name: this.account_name,
+      })
+      .catch(function (error) {
+        console.log('掲載できませんでした。')
+        console.log({'code':error.code, 'message':error.message})
+      })
+
+      setTimeout(() => {
+        let url = '/user_page/profile/profile'
+        window.location.href = url
+      }, 1000)
+    }
+  }
+
+}
 </script>
