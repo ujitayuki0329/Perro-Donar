@@ -64,7 +64,7 @@
           <h1>わんちゃん好きと愛犬をつなぐプラットフォーム！まずは無料の会員登録から</h1>
         </div>
         <div v-if="this.$store.getters['user'].login == true" class="nav-bar-title">
-          <h1>user_nameさん ようこそPerro-Donarへ</h1>
+          <h1>{{ user_name }}さん ようこそPerro-Donarへ</h1>
         </div>
       </nav> 
       <Modal v-show="login_modal">
@@ -104,8 +104,9 @@
 // import Modal from './Modal.vue'
 import '@/assets/css/style.css'
 import Modal from './Modal'
-import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword,signOut} from "firebase/auth"
-
+// import {getAuth, signInWithPopup, GoogleAuthProvider,signInWithEmailAndPassword,signOut} from "firebase/auth"
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { doc, getDoc,  getFirestore, query, where, collection,onSnapshot,getDocs } from 'firebase/firestore'
 
 export default {
   components: {
@@ -118,12 +119,52 @@ export default {
   },
   data() {
     return {
+      user_name: [],
+
+      name: "",
       email: "",
       password: "",
       login_modal: false,
       show: false,
     }
   },
+  mounted(){
+    const auth = getAuth();
+    const user = auth.currentUser;
+
+    if (user !== null) {
+      const uid = user.uid;
+      
+      const db = getFirestore();
+      const docRef = doc(db, "users", "R6E0h11sGHNnNymNkVJW")
+      //  const docRef = query(collection(db, 'users'), where('uid', '==', `${user.uid}`))
+      // const docRef = query(collection(db, 'users'), where('uid', '==', `${user.id}` ))
+      
+      getDoc(docRef).then((snap) => {
+        const array = [];
+        console.log(snap.data());
+        array.push(snap.data().name)
+        this.user_name = array
+      })
+    }
+
+
+    // const auth = getAuth();
+    // onAuthStateChanged(auth, (user) => {
+    //   if (user) {
+    //     const uid = user.uid;
+    //     const db = getFirestore();
+    //     const q = query(collection(db, 'users'), where('uid', '==', this.uid ))
+
+    //     getDoc(q).then((snap) => {
+    //       console.log(snap.data())
+    //     })
+    //   } else {
+    //     console.log(error)
+    //   }
+    // });
+  },
+
   methods: {
     open_login_modal() {
       this.login_modal = true
